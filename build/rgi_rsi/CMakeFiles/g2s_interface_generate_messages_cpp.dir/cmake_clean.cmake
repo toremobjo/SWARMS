@@ -1,0 +1,43 @@
+FILE(REMOVE_RECURSE
+  "CMakeFiles/g2s_interface_generate_messages_cpp"
+  "/home/uvlab/swarms/catkin_ws/devel/include/g2s_interface/waterData.h"
+  "/home/uvlab/swarms/catkin_ws/devel/include/g2s_interface/robotAlarm.h"
+  "/home/uvlab/swarms/catkin_ws/devel/include/g2s_interface/endOfAction.h"
+  "/home/uvlab/swarms/catkin_ws/devel/include/g2s_interface/environmentData.h"
+  "/home/uvlab/swarms/catkin_ws/devel/include/g2s_interface/robotSituation.h"
+  "/home/uvlab/swarms/catkin_ws/devel/include/g2s_interface/robotStatus.h"
+  "/home/uvlab/swarms/catkin_ws/devel/include/g2s_interface/abort_Action.h"
+  "/home/uvlab/swarms/catkin_ws/devel/include/g2s_interface/activityStatus.h"
+  "/home/uvlab/swarms/catkin_ws/devel/include/g2s_interface/resume_Action.h"
+  "/home/uvlab/swarms/catkin_ws/devel/include/g2s_interface/activateSONAR.h"
+  "/home/uvlab/swarms/catkin_ws/devel/include/g2s_interface/runVIDEO_ACQUISITION.h"
+  "/home/uvlab/swarms/catkin_ws/devel/include/g2s_interface/actionStatus.h"
+  "/home/uvlab/swarms/catkin_ws/devel/include/g2s_interface/stopEqptAction.h"
+  "/home/uvlab/swarms/catkin_ws/devel/include/g2s_interface/runFOLLOW_ROW.h"
+  "/home/uvlab/swarms/catkin_ws/devel/include/g2s_interface/suspend_Action.h"
+  "/home/uvlab/swarms/catkin_ws/devel/include/g2s_interface/activateUSBL.h"
+  "/home/uvlab/swarms/catkin_ws/devel/include/g2s_interface/runDIVE.h"
+  "/home/uvlab/swarms/catkin_ws/devel/include/g2s_interface/activateLASER.h"
+  "/home/uvlab/swarms/catkin_ws/devel/include/g2s_interface/runGRASP_OBJECT.h"
+  "/home/uvlab/swarms/catkin_ws/devel/include/g2s_interface/runCIRCLE_USBL.h"
+  "/home/uvlab/swarms/catkin_ws/devel/include/g2s_interface/runGOTO_WAYPOINT.h"
+  "/home/uvlab/swarms/catkin_ws/devel/include/g2s_interface/runSONAR_SCANNING.h"
+  "/home/uvlab/swarms/catkin_ws/devel/include/g2s_interface/runASCEND_GPS.h"
+  "/home/uvlab/swarms/catkin_ws/devel/include/g2s_interface/activateLIGHT.h"
+  "/home/uvlab/swarms/catkin_ws/devel/include/g2s_interface/powerStatus.h"
+  "/home/uvlab/swarms/catkin_ws/devel/include/g2s_interface/activateCAMERA.h"
+  "/home/uvlab/swarms/catkin_ws/devel/include/g2s_interface/activateGPS.h"
+  "/home/uvlab/swarms/catkin_ws/devel/include/g2s_interface/runWAIT.h"
+  "/home/uvlab/swarms/catkin_ws/devel/include/g2s_interface/deactivateEqpt.h"
+  "/home/uvlab/swarms/catkin_ws/devel/include/g2s_interface/activateWIFI.h"
+  "/home/uvlab/swarms/catkin_ws/devel/include/g2s_interface/runFOLLOW_STRUCTURE.h"
+  "/home/uvlab/swarms/catkin_ws/devel/include/g2s_interface/runASCEND.h"
+  "/home/uvlab/swarms/catkin_ws/devel/include/g2s_interface/runTRACK_TARGET.h"
+  "/home/uvlab/swarms/catkin_ws/devel/include/g2s_interface/activateACOUSTIC.h"
+  "/home/uvlab/swarms/catkin_ws/devel/include/g2s_interface/resetEqpt.h"
+)
+
+# Per-language clean rules from dependency scanning.
+FOREACH(lang)
+  INCLUDE(CMakeFiles/g2s_interface_generate_messages_cpp.dir/cmake_clean_${lang}.cmake OPTIONAL)
+ENDFOREACH(lang)

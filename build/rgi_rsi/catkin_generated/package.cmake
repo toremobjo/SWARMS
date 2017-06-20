@@ -1,0 +1,7 @@
+set(_CATKIN_CURRENT_PACKAGE "g2s_interface")
+set(g2s_interface_MAINTAINER "swarms <swarms@todo.todo>")
+set(g2s_interface_DEPRECATED "")
+set(g2s_interface_VERSION "0.0.0")
+set(g2s_interface_BUILD_DEPENDS "message_generation" "geometry_msgs" "nav_msgs" "roscpp" "std_msgs")
+set(g2s_interface_RUN_DEPENDS "message_runtime" "geometry_msgs" "nav_msgs" "roscpp" "std_msgs")
+set(g2s_interface_BUILDTOOL_DEPENDS "catkin")

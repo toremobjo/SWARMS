@@ -1,0 +1,8 @@
+prefix=/home/uvlab/swarms/catkin_ws/devel
+
+Name: g2s_interface
+Description: Description of g2s_interface
+Version: 0.0.0
+Cflags: -I/home/uvlab/swarms/catkin_ws/devel/include
+Libs: -L/home/uvlab/swarms/catkin_ws/devel/lib 
+Requires: geometry_msgs nav_msgs roscpp std_msgs message_runtime

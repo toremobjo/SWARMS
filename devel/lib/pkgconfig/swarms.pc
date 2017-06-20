@@ -1,0 +1,8 @@
+prefix=/home/uvlab/swarms/catkin_ws/devel
+
+Name: swarms
+Description: Description of swarms
+Version: 0.0.0
+Cflags: 
+Libs: -L/home/uvlab/swarms/catkin_ws/devel/lib 
+Requires: 

@@ -1,0 +1,8 @@
+prefix=/home/uvlab/swarms/catkin_ws/install
+
+Name: rsi_lauv_ntnu
+Description: Description of rsi_lauv_ntnu
+Version: 0.0.0
+Cflags: -I/home/uvlab/swarms/catkin_ws/install/include
+Libs: -L/home/uvlab/swarms/catkin_ws/install/lib 
+Requires: 

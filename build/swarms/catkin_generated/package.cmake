@@ -1,0 +1,7 @@
+set(_CATKIN_CURRENT_PACKAGE "swarms")
+set(swarms_MAINTAINER "uvlab <toremojbo@gmail.com>")
+set(swarms_DEPRECATED "")
+set(swarms_VERSION "0.0.0")
+set(swarms_BUILD_DEPENDS "geometry_msgs" "roscpp" "rospy" "sensor_msgs" "std_msgs")
+set(swarms_RUN_DEPENDS "geometry_msgs" "roscpp" "rospy" "sensor_msgs" "std_msgs")
+set(swarms_BUILDTOOL_DEPENDS "catkin")

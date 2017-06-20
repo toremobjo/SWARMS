@@ -1,0 +1,7 @@
+set(_CATKIN_CURRENT_PACKAGE "rsi_lauv_ntnu")
+set(rsi_lauv_ntnu_MAINTAINER "nicolas <nicolas@todo.todo>")
+set(rsi_lauv_ntnu_DEPRECATED "")
+set(rsi_lauv_ntnu_VERSION "0.0.0")
+set(rsi_lauv_ntnu_BUILD_DEPENDS "roscpp" "std_msgs" "message_generation")
+set(rsi_lauv_ntnu_RUN_DEPENDS "roscpp" "std_msgs" "message_runtime")
+set(rsi_lauv_ntnu_BUILDTOOL_DEPENDS "catkin")
