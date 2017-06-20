@@ -1640,20 +1640,20 @@ clean: rgi_rsi/CMakeFiles/g2s_interface_generate_messages.dir/clean
 # Target rules for target rgi_rsi/CMakeFiles/g2s_interface_generate_messages_cpp.dir
 
 # All Build rule for target.
-rgi_rsi/CMakeFiles/g2s_interface_generate_messages_cpp.dir/all: rgi_rsi/CMakeFiles/std_msgs_generate_messages_cpp.dir/all
 rgi_rsi/CMakeFiles/g2s_interface_generate_messages_cpp.dir/all: rgi_rsi/CMakeFiles/geometry_msgs_generate_messages_cpp.dir/all
+rgi_rsi/CMakeFiles/g2s_interface_generate_messages_cpp.dir/all: rgi_rsi/CMakeFiles/std_msgs_generate_messages_cpp.dir/all
 rgi_rsi/CMakeFiles/g2s_interface_generate_messages_cpp.dir/all: rgi_rsi/CMakeFiles/nav_msgs_generate_messages_cpp.dir/all
 rgi_rsi/CMakeFiles/g2s_interface_generate_messages_cpp.dir/all: rgi_rsi/CMakeFiles/_g2s_interface_generate_messages_check_deps_abort_Action.dir/all
-rgi_rsi/CMakeFiles/g2s_interface_generate_messages_cpp.dir/all: rgi_rsi/CMakeFiles/_g2s_interface_generate_messages_check_deps_stopEqptAction.dir/all
+rgi_rsi/CMakeFiles/g2s_interface_generate_messages_cpp.dir/all: rgi_rsi/CMakeFiles/_g2s_interface_generate_messages_check_deps_resume_Action.dir/all
+rgi_rsi/CMakeFiles/g2s_interface_generate_messages_cpp.dir/all: rgi_rsi/CMakeFiles/_g2s_interface_generate_messages_check_deps_activityStatus.dir/all
 rgi_rsi/CMakeFiles/g2s_interface_generate_messages_cpp.dir/all: rgi_rsi/CMakeFiles/_g2s_interface_generate_messages_check_deps_activateSONAR.dir/all
 rgi_rsi/CMakeFiles/g2s_interface_generate_messages_cpp.dir/all: rgi_rsi/CMakeFiles/_g2s_interface_generate_messages_check_deps_runVIDEO_ACQUISITION.dir/all
-rgi_rsi/CMakeFiles/g2s_interface_generate_messages_cpp.dir/all: rgi_rsi/CMakeFiles/_g2s_interface_generate_messages_check_deps_resume_Action.dir/all
 rgi_rsi/CMakeFiles/g2s_interface_generate_messages_cpp.dir/all: rgi_rsi/CMakeFiles/_g2s_interface_generate_messages_check_deps_suspend_Action.dir/all
 rgi_rsi/CMakeFiles/g2s_interface_generate_messages_cpp.dir/all: rgi_rsi/CMakeFiles/_g2s_interface_generate_messages_check_deps_activateUSBL.dir/all
-rgi_rsi/CMakeFiles/g2s_interface_generate_messages_cpp.dir/all: rgi_rsi/CMakeFiles/_g2s_interface_generate_messages_check_deps_activateWIFI.dir/all
-rgi_rsi/CMakeFiles/g2s_interface_generate_messages_cpp.dir/all: rgi_rsi/CMakeFiles/_g2s_interface_generate_messages_check_deps_activityStatus.dir/all
-rgi_rsi/CMakeFiles/g2s_interface_generate_messages_cpp.dir/all: rgi_rsi/CMakeFiles/_g2s_interface_generate_messages_check_deps_actionStatus.dir/all
+rgi_rsi/CMakeFiles/g2s_interface_generate_messages_cpp.dir/all: rgi_rsi/CMakeFiles/_g2s_interface_generate_messages_check_deps_stopEqptAction.dir/all
 rgi_rsi/CMakeFiles/g2s_interface_generate_messages_cpp.dir/all: rgi_rsi/CMakeFiles/_g2s_interface_generate_messages_check_deps_runFOLLOW_ROW.dir/all
+rgi_rsi/CMakeFiles/g2s_interface_generate_messages_cpp.dir/all: rgi_rsi/CMakeFiles/_g2s_interface_generate_messages_check_deps_activateWIFI.dir/all
+rgi_rsi/CMakeFiles/g2s_interface_generate_messages_cpp.dir/all: rgi_rsi/CMakeFiles/_g2s_interface_generate_messages_check_deps_actionStatus.dir/all
 rgi_rsi/CMakeFiles/g2s_interface_generate_messages_cpp.dir/all: rgi_rsi/CMakeFiles/_g2s_interface_generate_messages_check_deps_runDIVE.dir/all
 rgi_rsi/CMakeFiles/g2s_interface_generate_messages_cpp.dir/all: rgi_rsi/CMakeFiles/_g2s_interface_generate_messages_check_deps_activateLASER.dir/all
 rgi_rsi/CMakeFiles/g2s_interface_generate_messages_cpp.dir/all: rgi_rsi/CMakeFiles/_g2s_interface_generate_messages_check_deps_waterData.dir/all
@@ -1709,19 +1709,19 @@ clean: rgi_rsi/CMakeFiles/g2s_interface_generate_messages_cpp.dir/clean
 
 # All Build rule for target.
 rgi_rsi/CMakeFiles/g2s_interface_generate_messages_lisp.dir/all: rgi_rsi/CMakeFiles/std_msgs_generate_messages_lisp.dir/all
-rgi_rsi/CMakeFiles/g2s_interface_generate_messages_lisp.dir/all: rgi_rsi/CMakeFiles/nav_msgs_generate_messages_lisp.dir/all
 rgi_rsi/CMakeFiles/g2s_interface_generate_messages_lisp.dir/all: rgi_rsi/CMakeFiles/geometry_msgs_generate_messages_lisp.dir/all
+rgi_rsi/CMakeFiles/g2s_interface_generate_messages_lisp.dir/all: rgi_rsi/CMakeFiles/nav_msgs_generate_messages_lisp.dir/all
 rgi_rsi/CMakeFiles/g2s_interface_generate_messages_lisp.dir/all: rgi_rsi/CMakeFiles/_g2s_interface_generate_messages_check_deps_abort_Action.dir/all
-rgi_rsi/CMakeFiles/g2s_interface_generate_messages_lisp.dir/all: rgi_rsi/CMakeFiles/_g2s_interface_generate_messages_check_deps_stopEqptAction.dir/all
+rgi_rsi/CMakeFiles/g2s_interface_generate_messages_lisp.dir/all: rgi_rsi/CMakeFiles/_g2s_interface_generate_messages_check_deps_resume_Action.dir/all
+rgi_rsi/CMakeFiles/g2s_interface_generate_messages_lisp.dir/all: rgi_rsi/CMakeFiles/_g2s_interface_generate_messages_check_deps_activityStatus.dir/all
 rgi_rsi/CMakeFiles/g2s_interface_generate_messages_lisp.dir/all: rgi_rsi/CMakeFiles/_g2s_interface_generate_messages_check_deps_activateSONAR.dir/all
 rgi_rsi/CMakeFiles/g2s_interface_generate_messages_lisp.dir/all: rgi_rsi/CMakeFiles/_g2s_interface_generate_messages_check_deps_runVIDEO_ACQUISITION.dir/all
-rgi_rsi/CMakeFiles/g2s_interface_generate_messages_lisp.dir/all: rgi_rsi/CMakeFiles/_g2s_interface_generate_messages_check_deps_resume_Action.dir/all
 rgi_rsi/CMakeFiles/g2s_interface_generate_messages_lisp.dir/all: rgi_rsi/CMakeFiles/_g2s_interface_generate_messages_check_deps_suspend_Action.dir/all
 rgi_rsi/CMakeFiles/g2s_interface_generate_messages_lisp.dir/all: rgi_rsi/CMakeFiles/_g2s_interface_generate_messages_check_deps_activateUSBL.dir/all
-rgi_rsi/CMakeFiles/g2s_interface_generate_messages_lisp.dir/all: rgi_rsi/CMakeFiles/_g2s_interface_generate_messages_check_deps_activateWIFI.dir/all
-rgi_rsi/CMakeFiles/g2s_interface_generate_messages_lisp.dir/all: rgi_rsi/CMakeFiles/_g2s_interface_generate_messages_check_deps_activityStatus.dir/all
-rgi_rsi/CMakeFiles/g2s_interface_generate_messages_lisp.dir/all: rgi_rsi/CMakeFiles/_g2s_interface_generate_messages_check_deps_actionStatus.dir/all
+rgi_rsi/CMakeFiles/g2s_interface_generate_messages_lisp.dir/all: rgi_rsi/CMakeFiles/_g2s_interface_generate_messages_check_deps_stopEqptAction.dir/all
 rgi_rsi/CMakeFiles/g2s_interface_generate_messages_lisp.dir/all: rgi_rsi/CMakeFiles/_g2s_interface_generate_messages_check_deps_runFOLLOW_ROW.dir/all
+rgi_rsi/CMakeFiles/g2s_interface_generate_messages_lisp.dir/all: rgi_rsi/CMakeFiles/_g2s_interface_generate_messages_check_deps_activateWIFI.dir/all
+rgi_rsi/CMakeFiles/g2s_interface_generate_messages_lisp.dir/all: rgi_rsi/CMakeFiles/_g2s_interface_generate_messages_check_deps_actionStatus.dir/all
 rgi_rsi/CMakeFiles/g2s_interface_generate_messages_lisp.dir/all: rgi_rsi/CMakeFiles/_g2s_interface_generate_messages_check_deps_runDIVE.dir/all
 rgi_rsi/CMakeFiles/g2s_interface_generate_messages_lisp.dir/all: rgi_rsi/CMakeFiles/_g2s_interface_generate_messages_check_deps_activateLASER.dir/all
 rgi_rsi/CMakeFiles/g2s_interface_generate_messages_lisp.dir/all: rgi_rsi/CMakeFiles/_g2s_interface_generate_messages_check_deps_waterData.dir/all
@@ -1780,16 +1780,16 @@ rgi_rsi/CMakeFiles/g2s_interface_generate_messages_py.dir/all: rgi_rsi/CMakeFile
 rgi_rsi/CMakeFiles/g2s_interface_generate_messages_py.dir/all: rgi_rsi/CMakeFiles/geometry_msgs_generate_messages_py.dir/all
 rgi_rsi/CMakeFiles/g2s_interface_generate_messages_py.dir/all: rgi_rsi/CMakeFiles/nav_msgs_generate_messages_py.dir/all
 rgi_rsi/CMakeFiles/g2s_interface_generate_messages_py.dir/all: rgi_rsi/CMakeFiles/_g2s_interface_generate_messages_check_deps_abort_Action.dir/all
-rgi_rsi/CMakeFiles/g2s_interface_generate_messages_py.dir/all: rgi_rsi/CMakeFiles/_g2s_interface_generate_messages_check_deps_stopEqptAction.dir/all
+rgi_rsi/CMakeFiles/g2s_interface_generate_messages_py.dir/all: rgi_rsi/CMakeFiles/_g2s_interface_generate_messages_check_deps_resume_Action.dir/all
+rgi_rsi/CMakeFiles/g2s_interface_generate_messages_py.dir/all: rgi_rsi/CMakeFiles/_g2s_interface_generate_messages_check_deps_activityStatus.dir/all
 rgi_rsi/CMakeFiles/g2s_interface_generate_messages_py.dir/all: rgi_rsi/CMakeFiles/_g2s_interface_generate_messages_check_deps_activateSONAR.dir/all
 rgi_rsi/CMakeFiles/g2s_interface_generate_messages_py.dir/all: rgi_rsi/CMakeFiles/_g2s_interface_generate_messages_check_deps_runVIDEO_ACQUISITION.dir/all
-rgi_rsi/CMakeFiles/g2s_interface_generate_messages_py.dir/all: rgi_rsi/CMakeFiles/_g2s_interface_generate_messages_check_deps_resume_Action.dir/all
 rgi_rsi/CMakeFiles/g2s_interface_generate_messages_py.dir/all: rgi_rsi/CMakeFiles/_g2s_interface_generate_messages_check_deps_suspend_Action.dir/all
 rgi_rsi/CMakeFiles/g2s_interface_generate_messages_py.dir/all: rgi_rsi/CMakeFiles/_g2s_interface_generate_messages_check_deps_activateUSBL.dir/all
-rgi_rsi/CMakeFiles/g2s_interface_generate_messages_py.dir/all: rgi_rsi/CMakeFiles/_g2s_interface_generate_messages_check_deps_activateWIFI.dir/all
-rgi_rsi/CMakeFiles/g2s_interface_generate_messages_py.dir/all: rgi_rsi/CMakeFiles/_g2s_interface_generate_messages_check_deps_activityStatus.dir/all
-rgi_rsi/CMakeFiles/g2s_interface_generate_messages_py.dir/all: rgi_rsi/CMakeFiles/_g2s_interface_generate_messages_check_deps_actionStatus.dir/all
+rgi_rsi/CMakeFiles/g2s_interface_generate_messages_py.dir/all: rgi_rsi/CMakeFiles/_g2s_interface_generate_messages_check_deps_stopEqptAction.dir/all
 rgi_rsi/CMakeFiles/g2s_interface_generate_messages_py.dir/all: rgi_rsi/CMakeFiles/_g2s_interface_generate_messages_check_deps_runFOLLOW_ROW.dir/all
+rgi_rsi/CMakeFiles/g2s_interface_generate_messages_py.dir/all: rgi_rsi/CMakeFiles/_g2s_interface_generate_messages_check_deps_activateWIFI.dir/all
+rgi_rsi/CMakeFiles/g2s_interface_generate_messages_py.dir/all: rgi_rsi/CMakeFiles/_g2s_interface_generate_messages_check_deps_actionStatus.dir/all
 rgi_rsi/CMakeFiles/g2s_interface_generate_messages_py.dir/all: rgi_rsi/CMakeFiles/_g2s_interface_generate_messages_check_deps_runDIVE.dir/all
 rgi_rsi/CMakeFiles/g2s_interface_generate_messages_py.dir/all: rgi_rsi/CMakeFiles/_g2s_interface_generate_messages_check_deps_activateLASER.dir/all
 rgi_rsi/CMakeFiles/g2s_interface_generate_messages_py.dir/all: rgi_rsi/CMakeFiles/_g2s_interface_generate_messages_check_deps_waterData.dir/all
@@ -2528,8 +2528,8 @@ clean: rsi_lauv_ntnu/CMakeFiles/rsi_lauv_ntnu_gencpp.dir/clean
 # Target rules for target rsi_lauv_ntnu/CMakeFiles/rsi_lauv_ntnu_generate_messages.dir
 
 # All Build rule for target.
-rsi_lauv_ntnu/CMakeFiles/rsi_lauv_ntnu_generate_messages.dir/all: rsi_lauv_ntnu/CMakeFiles/rsi_lauv_ntnu_generate_messages_lisp.dir/all
 rsi_lauv_ntnu/CMakeFiles/rsi_lauv_ntnu_generate_messages.dir/all: rsi_lauv_ntnu/CMakeFiles/rsi_lauv_ntnu_generate_messages_cpp.dir/all
+rsi_lauv_ntnu/CMakeFiles/rsi_lauv_ntnu_generate_messages.dir/all: rsi_lauv_ntnu/CMakeFiles/rsi_lauv_ntnu_generate_messages_lisp.dir/all
 rsi_lauv_ntnu/CMakeFiles/rsi_lauv_ntnu_generate_messages.dir/all: rsi_lauv_ntnu/CMakeFiles/rsi_lauv_ntnu_generate_messages_py.dir/all
 	$(MAKE) -f rsi_lauv_ntnu/CMakeFiles/rsi_lauv_ntnu_generate_messages.dir/build.make rsi_lauv_ntnu/CMakeFiles/rsi_lauv_ntnu_generate_messages.dir/depend
 	$(MAKE) -f rsi_lauv_ntnu/CMakeFiles/rsi_lauv_ntnu_generate_messages.dir/build.make rsi_lauv_ntnu/CMakeFiles/rsi_lauv_ntnu_generate_messages.dir/build
@@ -2566,8 +2566,8 @@ clean: rsi_lauv_ntnu/CMakeFiles/rsi_lauv_ntnu_generate_messages.dir/clean
 
 # All Build rule for target.
 rsi_lauv_ntnu/CMakeFiles/rsi_lauv_ntnu_generate_messages_cpp.dir/all: rgi_rsi/CMakeFiles/std_msgs_generate_messages_cpp.dir/all
-rsi_lauv_ntnu/CMakeFiles/rsi_lauv_ntnu_generate_messages_cpp.dir/all: rsi_lauv_ntnu/CMakeFiles/_rsi_lauv_ntnu_generate_messages_check_deps_testSrvRsiLauv.dir/all
 rsi_lauv_ntnu/CMakeFiles/rsi_lauv_ntnu_generate_messages_cpp.dir/all: rsi_lauv_ntnu/CMakeFiles/_rsi_lauv_ntnu_generate_messages_check_deps_testMsgRsiLauv.dir/all
+rsi_lauv_ntnu/CMakeFiles/rsi_lauv_ntnu_generate_messages_cpp.dir/all: rsi_lauv_ntnu/CMakeFiles/_rsi_lauv_ntnu_generate_messages_check_deps_testSrvRsiLauv.dir/all
 	$(MAKE) -f rsi_lauv_ntnu/CMakeFiles/rsi_lauv_ntnu_generate_messages_cpp.dir/build.make rsi_lauv_ntnu/CMakeFiles/rsi_lauv_ntnu_generate_messages_cpp.dir/depend
 	$(MAKE) -f rsi_lauv_ntnu/CMakeFiles/rsi_lauv_ntnu_generate_messages_cpp.dir/build.make rsi_lauv_ntnu/CMakeFiles/rsi_lauv_ntnu_generate_messages_cpp.dir/build
 	$(CMAKE_COMMAND) -E cmake_progress_report /home/uvlab/swarms/catkin_ws/build/CMakeFiles  92 93
@@ -2599,8 +2599,8 @@ clean: rsi_lauv_ntnu/CMakeFiles/rsi_lauv_ntnu_generate_messages_cpp.dir/clean
 
 # All Build rule for target.
 rsi_lauv_ntnu/CMakeFiles/rsi_lauv_ntnu_generate_messages_lisp.dir/all: rgi_rsi/CMakeFiles/std_msgs_generate_messages_lisp.dir/all
-rsi_lauv_ntnu/CMakeFiles/rsi_lauv_ntnu_generate_messages_lisp.dir/all: rsi_lauv_ntnu/CMakeFiles/_rsi_lauv_ntnu_generate_messages_check_deps_testSrvRsiLauv.dir/all
 rsi_lauv_ntnu/CMakeFiles/rsi_lauv_ntnu_generate_messages_lisp.dir/all: rsi_lauv_ntnu/CMakeFiles/_rsi_lauv_ntnu_generate_messages_check_deps_testMsgRsiLauv.dir/all
+rsi_lauv_ntnu/CMakeFiles/rsi_lauv_ntnu_generate_messages_lisp.dir/all: rsi_lauv_ntnu/CMakeFiles/_rsi_lauv_ntnu_generate_messages_check_deps_testSrvRsiLauv.dir/all
 	$(MAKE) -f rsi_lauv_ntnu/CMakeFiles/rsi_lauv_ntnu_generate_messages_lisp.dir/build.make rsi_lauv_ntnu/CMakeFiles/rsi_lauv_ntnu_generate_messages_lisp.dir/depend
 	$(MAKE) -f rsi_lauv_ntnu/CMakeFiles/rsi_lauv_ntnu_generate_messages_lisp.dir/build.make rsi_lauv_ntnu/CMakeFiles/rsi_lauv_ntnu_generate_messages_lisp.dir/build
 	$(CMAKE_COMMAND) -E cmake_progress_report /home/uvlab/swarms/catkin_ws/build/CMakeFiles  94 95
@@ -2632,8 +2632,8 @@ clean: rsi_lauv_ntnu/CMakeFiles/rsi_lauv_ntnu_generate_messages_lisp.dir/clean
 
 # All Build rule for target.
 rsi_lauv_ntnu/CMakeFiles/rsi_lauv_ntnu_generate_messages_py.dir/all: rgi_rsi/CMakeFiles/std_msgs_generate_messages_py.dir/all
-rsi_lauv_ntnu/CMakeFiles/rsi_lauv_ntnu_generate_messages_py.dir/all: rsi_lauv_ntnu/CMakeFiles/_rsi_lauv_ntnu_generate_messages_check_deps_testSrvRsiLauv.dir/all
 rsi_lauv_ntnu/CMakeFiles/rsi_lauv_ntnu_generate_messages_py.dir/all: rsi_lauv_ntnu/CMakeFiles/_rsi_lauv_ntnu_generate_messages_check_deps_testMsgRsiLauv.dir/all
+rsi_lauv_ntnu/CMakeFiles/rsi_lauv_ntnu_generate_messages_py.dir/all: rsi_lauv_ntnu/CMakeFiles/_rsi_lauv_ntnu_generate_messages_check_deps_testSrvRsiLauv.dir/all
 	$(MAKE) -f rsi_lauv_ntnu/CMakeFiles/rsi_lauv_ntnu_generate_messages_py.dir/build.make rsi_lauv_ntnu/CMakeFiles/rsi_lauv_ntnu_generate_messages_py.dir/depend
 	$(MAKE) -f rsi_lauv_ntnu/CMakeFiles/rsi_lauv_ntnu_generate_messages_py.dir/build.make rsi_lauv_ntnu/CMakeFiles/rsi_lauv_ntnu_generate_messages_py.dir/build
 	$(CMAKE_COMMAND) -E cmake_progress_report /home/uvlab/swarms/catkin_ws/build/CMakeFiles  96 97 98
@@ -2791,131 +2791,6 @@ rsi_lauv_ntnu/CMakeFiles/zeroLauvNode.dir/clean:
 # clean rule for target.
 clean: rsi_lauv_ntnu/CMakeFiles/zeroLauvNode.dir/clean
 .PHONY : clean
-
-#=============================================================================
-# Directory level rules for directory swarms
-
-# Convenience name for "all" pass in the directory.
-swarms/all:
-.PHONY : swarms/all
-
-# Convenience name for "clean" pass in the directory.
-swarms/clean: swarms/CMakeFiles/sensor_msgs_generate_messages_cpp.dir/clean
-swarms/clean: swarms/CMakeFiles/sensor_msgs_generate_messages_lisp.dir/clean
-swarms/clean: swarms/CMakeFiles/sensor_msgs_generate_messages_py.dir/clean
-.PHONY : swarms/clean
-
-# Convenience name for "preinstall" pass in the directory.
-swarms/preinstall:
-.PHONY : swarms/preinstall
-
-#=============================================================================
-# Target rules for target swarms/CMakeFiles/sensor_msgs_generate_messages_cpp.dir
-
-# All Build rule for target.
-swarms/CMakeFiles/sensor_msgs_generate_messages_cpp.dir/all:
-	$(MAKE) -f swarms/CMakeFiles/sensor_msgs_generate_messages_cpp.dir/build.make swarms/CMakeFiles/sensor_msgs_generate_messages_cpp.dir/depend
-	$(MAKE) -f swarms/CMakeFiles/sensor_msgs_generate_messages_cpp.dir/build.make swarms/CMakeFiles/sensor_msgs_generate_messages_cpp.dir/build
-	$(CMAKE_COMMAND) -E cmake_progress_report /home/uvlab/swarms/catkin_ws/build/CMakeFiles 
-	@echo "Built target sensor_msgs_generate_messages_cpp"
-.PHONY : swarms/CMakeFiles/sensor_msgs_generate_messages_cpp.dir/all
-
-# Build rule for subdir invocation for target.
-swarms/CMakeFiles/sensor_msgs_generate_messages_cpp.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/uvlab/swarms/catkin_ws/build/CMakeFiles 0
-	$(MAKE) -f CMakeFiles/Makefile2 swarms/CMakeFiles/sensor_msgs_generate_messages_cpp.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/uvlab/swarms/catkin_ws/build/CMakeFiles 0
-.PHONY : swarms/CMakeFiles/sensor_msgs_generate_messages_cpp.dir/rule
-
-# Convenience name for target.
-sensor_msgs_generate_messages_cpp: swarms/CMakeFiles/sensor_msgs_generate_messages_cpp.dir/rule
-.PHONY : sensor_msgs_generate_messages_cpp
-
-# clean rule for target.
-swarms/CMakeFiles/sensor_msgs_generate_messages_cpp.dir/clean:
-	$(MAKE) -f swarms/CMakeFiles/sensor_msgs_generate_messages_cpp.dir/build.make swarms/CMakeFiles/sensor_msgs_generate_messages_cpp.dir/clean
-.PHONY : swarms/CMakeFiles/sensor_msgs_generate_messages_cpp.dir/clean
-
-# clean rule for target.
-clean: swarms/CMakeFiles/sensor_msgs_generate_messages_cpp.dir/clean
-.PHONY : clean
-
-#=============================================================================
-# Target rules for target swarms/CMakeFiles/sensor_msgs_generate_messages_lisp.dir
-
-# All Build rule for target.
-swarms/CMakeFiles/sensor_msgs_generate_messages_lisp.dir/all:
-	$(MAKE) -f swarms/CMakeFiles/sensor_msgs_generate_messages_lisp.dir/build.make swarms/CMakeFiles/sensor_msgs_generate_messages_lisp.dir/depend
-	$(MAKE) -f swarms/CMakeFiles/sensor_msgs_generate_messages_lisp.dir/build.make swarms/CMakeFiles/sensor_msgs_generate_messages_lisp.dir/build
-	$(CMAKE_COMMAND) -E cmake_progress_report /home/uvlab/swarms/catkin_ws/build/CMakeFiles 
-	@echo "Built target sensor_msgs_generate_messages_lisp"
-.PHONY : swarms/CMakeFiles/sensor_msgs_generate_messages_lisp.dir/all
-
-# Build rule for subdir invocation for target.
-swarms/CMakeFiles/sensor_msgs_generate_messages_lisp.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/uvlab/swarms/catkin_ws/build/CMakeFiles 0
-	$(MAKE) -f CMakeFiles/Makefile2 swarms/CMakeFiles/sensor_msgs_generate_messages_lisp.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/uvlab/swarms/catkin_ws/build/CMakeFiles 0
-.PHONY : swarms/CMakeFiles/sensor_msgs_generate_messages_lisp.dir/rule
-
-# Convenience name for target.
-sensor_msgs_generate_messages_lisp: swarms/CMakeFiles/sensor_msgs_generate_messages_lisp.dir/rule
-.PHONY : sensor_msgs_generate_messages_lisp
-
-# clean rule for target.
-swarms/CMakeFiles/sensor_msgs_generate_messages_lisp.dir/clean:
-	$(MAKE) -f swarms/CMakeFiles/sensor_msgs_generate_messages_lisp.dir/build.make swarms/CMakeFiles/sensor_msgs_generate_messages_lisp.dir/clean
-.PHONY : swarms/CMakeFiles/sensor_msgs_generate_messages_lisp.dir/clean
-
-# clean rule for target.
-clean: swarms/CMakeFiles/sensor_msgs_generate_messages_lisp.dir/clean
-.PHONY : clean
-
-#=============================================================================
-# Target rules for target swarms/CMakeFiles/sensor_msgs_generate_messages_py.dir
-
-# All Build rule for target.
-swarms/CMakeFiles/sensor_msgs_generate_messages_py.dir/all:
-	$(MAKE) -f swarms/CMakeFiles/sensor_msgs_generate_messages_py.dir/build.make swarms/CMakeFiles/sensor_msgs_generate_messages_py.dir/depend
-	$(MAKE) -f swarms/CMakeFiles/sensor_msgs_generate_messages_py.dir/build.make swarms/CMakeFiles/sensor_msgs_generate_messages_py.dir/build
-	$(CMAKE_COMMAND) -E cmake_progress_report /home/uvlab/swarms/catkin_ws/build/CMakeFiles 
-	@echo "Built target sensor_msgs_generate_messages_py"
-.PHONY : swarms/CMakeFiles/sensor_msgs_generate_messages_py.dir/all
-
-# Build rule for subdir invocation for target.
-swarms/CMakeFiles/sensor_msgs_generate_messages_py.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/uvlab/swarms/catkin_ws/build/CMakeFiles 0
-	$(MAKE) -f CMakeFiles/Makefile2 swarms/CMakeFiles/sensor_msgs_generate_messages_py.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/uvlab/swarms/catkin_ws/build/CMakeFiles 0
-.PHONY : swarms/CMakeFiles/sensor_msgs_generate_messages_py.dir/rule
-
-# Convenience name for target.
-sensor_msgs_generate_messages_py: swarms/CMakeFiles/sensor_msgs_generate_messages_py.dir/rule
-.PHONY : sensor_msgs_generate_messages_py
-
-# clean rule for target.
-swarms/CMakeFiles/sensor_msgs_generate_messages_py.dir/clean:
-	$(MAKE) -f swarms/CMakeFiles/sensor_msgs_generate_messages_py.dir/build.make swarms/CMakeFiles/sensor_msgs_generate_messages_py.dir/clean
-.PHONY : swarms/CMakeFiles/sensor_msgs_generate_messages_py.dir/clean
-
-# clean rule for target.
-clean: swarms/CMakeFiles/sensor_msgs_generate_messages_py.dir/clean
-.PHONY : clean
-
-#=============================================================================
-# Directory level rules for directory test
-
-# Convenience name for "all" pass in the directory.
-test/all:
-.PHONY : test/all
-
-# Convenience name for "clean" pass in the directory.
-test/clean:
-.PHONY : test/clean
-
-# Convenience name for "preinstall" pass in the directory.
-test/preinstall:
-.PHONY : test/preinstall
 
 #=============================================================================
 # Special targets to cleanup operation of make.

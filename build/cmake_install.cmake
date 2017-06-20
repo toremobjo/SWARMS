@@ -119,8 +119,6 @@ IF(NOT CMAKE_INSTALL_LOCAL_ONLY)
   INCLUDE("/home/uvlab/swarms/catkin_ws/build/gtest/cmake_install.cmake")
   INCLUDE("/home/uvlab/swarms/catkin_ws/build/rgi_rsi/cmake_install.cmake")
   INCLUDE("/home/uvlab/swarms/catkin_ws/build/rsi_lauv_ntnu/cmake_install.cmake")
-  INCLUDE("/home/uvlab/swarms/catkin_ws/build/swarms/cmake_install.cmake")
-  INCLUDE("/home/uvlab/swarms/catkin_ws/build/test/cmake_install.cmake")
 
 ENDIF(NOT CMAKE_INSTALL_LOCAL_ONLY)
 

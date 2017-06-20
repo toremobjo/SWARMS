@@ -7,5 +7,3 @@
 SUBDIRS(gtest)
 SUBDIRS(rgi_rsi)
 SUBDIRS(rsi_lauv_ntnu)
-SUBDIRS(swarms)
-SUBDIRS(test)
