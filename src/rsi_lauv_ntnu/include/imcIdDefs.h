@@ -24,5 +24,7 @@
 
 #define IMC_ID_FUELLEVEL 279
 
+#define IMC_ID_PLANCONTROL 559
+
 
 #endif
