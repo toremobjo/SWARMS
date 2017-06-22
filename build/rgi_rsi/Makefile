@@ -682,6 +682,20 @@ actionlib_msgs_generate_messages_py/fast:
 .PHONY : actionlib_msgs_generate_messages_py/fast
 
 # Convenience name for target.
+rgi_rsi/CMakeFiles/fakeRgi_node.dir/rule:
+	cd /home/uvlab/swarms/catkin_ws/build && $(MAKE) -f CMakeFiles/Makefile2 rgi_rsi/CMakeFiles/fakeRgi_node.dir/rule
+.PHONY : rgi_rsi/CMakeFiles/fakeRgi_node.dir/rule
+
+# Convenience name for target.
+fakeRgi_node: rgi_rsi/CMakeFiles/fakeRgi_node.dir/rule
+.PHONY : fakeRgi_node
+
+# fast build rule for target.
+fakeRgi_node/fast:
+	cd /home/uvlab/swarms/catkin_ws/build && $(MAKE) -f rgi_rsi/CMakeFiles/fakeRgi_node.dir/build.make rgi_rsi/CMakeFiles/fakeRgi_node.dir/build
+.PHONY : fakeRgi_node/fast
+
+# Convenience name for target.
 rgi_rsi/CMakeFiles/g2s_interface_gencpp.dir/rule:
 	cd /home/uvlab/swarms/catkin_ws/build && $(MAKE) -f CMakeFiles/Makefile2 rgi_rsi/CMakeFiles/g2s_interface_gencpp.dir/rule
 .PHONY : rgi_rsi/CMakeFiles/g2s_interface_gencpp.dir/rule
@@ -989,6 +1003,30 @@ std_msgs_generate_messages_py/fast:
 	cd /home/uvlab/swarms/catkin_ws/build && $(MAKE) -f rgi_rsi/CMakeFiles/std_msgs_generate_messages_py.dir/build.make rgi_rsi/CMakeFiles/std_msgs_generate_messages_py.dir/build
 .PHONY : std_msgs_generate_messages_py/fast
 
+src/fakeRgi.o: src/fakeRgi.cpp.o
+.PHONY : src/fakeRgi.o
+
+# target to build an object file
+src/fakeRgi.cpp.o:
+	cd /home/uvlab/swarms/catkin_ws/build && $(MAKE) -f rgi_rsi/CMakeFiles/fakeRgi_node.dir/build.make rgi_rsi/CMakeFiles/fakeRgi_node.dir/src/fakeRgi.cpp.o
+.PHONY : src/fakeRgi.cpp.o
+
+src/fakeRgi.i: src/fakeRgi.cpp.i
+.PHONY : src/fakeRgi.i
+
+# target to preprocess a source file
+src/fakeRgi.cpp.i:
+	cd /home/uvlab/swarms/catkin_ws/build && $(MAKE) -f rgi_rsi/CMakeFiles/fakeRgi_node.dir/build.make rgi_rsi/CMakeFiles/fakeRgi_node.dir/src/fakeRgi.cpp.i
+.PHONY : src/fakeRgi.cpp.i
+
+src/fakeRgi.s: src/fakeRgi.cpp.s
+.PHONY : src/fakeRgi.s
+
+# target to generate assembly for a file
+src/fakeRgi.cpp.s:
+	cd /home/uvlab/swarms/catkin_ws/build && $(MAKE) -f rgi_rsi/CMakeFiles/fakeRgi_node.dir/build.make rgi_rsi/CMakeFiles/fakeRgi_node.dir/src/fakeRgi.cpp.s
+.PHONY : src/fakeRgi.cpp.s
+
 # Help Target
 help:
 	@echo "The following are some of the valid targets for this Makefile:"
@@ -1034,6 +1072,7 @@ help:
 	@echo "... actionlib_msgs_generate_messages_lisp"
 	@echo "... actionlib_msgs_generate_messages_py"
 	@echo "... edit_cache"
+	@echo "... fakeRgi_node"
 	@echo "... g2s_interface_gencpp"
 	@echo "... g2s_interface_generate_messages"
 	@echo "... g2s_interface_generate_messages_cpp"
@@ -1062,6 +1101,9 @@ help:
 	@echo "... std_msgs_generate_messages_lisp"
 	@echo "... std_msgs_generate_messages_py"
 	@echo "... test"
+	@echo "... src/fakeRgi.o"
+	@echo "... src/fakeRgi.i"
+	@echo "... src/fakeRgi.s"
 .PHONY : help
 
 

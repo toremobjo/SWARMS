@@ -3169,6 +3169,8 @@ std_msgs/Header.h
 -
 geometry_msgs/Pose.h
 -
+geometry_msgs/Point.h
+-
 rsi_lauv_ntnu/testMsgRsiLauv.h
 /home/uvlab/swarms/catkin_ws/src/rsi_lauv_ntnu/include/rsi_lauv_ntnu/testMsgRsiLauv.h
 rsi_lauv_ntnu/testSrvRsiLauv.h

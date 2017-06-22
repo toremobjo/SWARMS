@@ -748,6 +748,19 @@ actionlib_msgs_generate_messages_py/fast:
 .PHONY : actionlib_msgs_generate_messages_py/fast
 
 #=============================================================================
+# Target rules for targets named fakeRgi_node
+
+# Build rule for target.
+fakeRgi_node: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 fakeRgi_node
+.PHONY : fakeRgi_node
+
+# fast build rule for target.
+fakeRgi_node/fast:
+	$(MAKE) -f rgi_rsi/CMakeFiles/fakeRgi_node.dir/build.make rgi_rsi/CMakeFiles/fakeRgi_node.dir/build
+.PHONY : fakeRgi_node/fast
+
+#=============================================================================
 # Target rules for targets named g2s_interface_gencpp
 
 # Build rule for target.
@@ -1248,6 +1261,7 @@ help:
 	@echo "... actionlib_msgs_generate_messages_cpp"
 	@echo "... actionlib_msgs_generate_messages_lisp"
 	@echo "... actionlib_msgs_generate_messages_py"
+	@echo "... fakeRgi_node"
 	@echo "... g2s_interface_gencpp"
 	@echo "... g2s_interface_generate_messages"
 	@echo "... g2s_interface_generate_messages_cpp"

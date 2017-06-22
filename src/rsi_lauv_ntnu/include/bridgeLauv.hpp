@@ -7,6 +7,8 @@
 #include <std_msgs/String.h>
 #include <std_msgs/Header.h>
 #include <geometry_msgs/Pose.h>
+#include <geometry_msgs/Point.h>
+
 
 #include "rsi_lauv_ntnu/testMsgRsiLauv.h"
 #include "rsi_lauv_ntnu/testSrvRsiLauv.h"
@@ -101,6 +103,7 @@ namespace rsilauv
       ser4_ = nh_.advertiseService("abort_Action",&Bridge::runAbortAction,this);
       // Timer
       timer1_ = nh_.createTimer(ros::Duration(1),&Bridge::messageOut,this);
+
 
       // "EnvironmentData"
       myWater_.temperature = -99999;
@@ -247,6 +250,7 @@ namespace rsilauv
       g2s_interface::abort_Action::Response &res)
     {
       if (!isConnectedDetermined()){
+        res.success = false;
         return false;
       }
 
@@ -255,26 +259,31 @@ namespace rsilauv
       if (req.actionId!=0 && req.actionId!=action_id_)
       {
         ROS_WARN("[%s] Incorrect actionId",nodeName_.c_str());
+        res.success = false;
         return false;
       }
 
       ROS_INFO("[%s] runAbortAction",nodeName_.c_str());
 
-      DUNE::IMC::PlanControl pc;
+      DUNE::IMC::Abort ab;
+      ab.setDestination(vehicleId_);
+      sendToTcpServer(ab);
+
+      /*DUNE::IMC::PlanControl pc;
       pc.plan_id = 1;
       pc.op = DUNE::IMC::PlanControl::PC_STOP;
       pc.type = DUNE::IMC::PlanControl::PC_REQUEST;
       pc.request_id = 1000;
       sendToTcpServer(pc);
+*/
+      //ABORT EVERYTHING - what happens if the camera/sonar is activated, but the rest is aborted?
 
-      ROS_INFO("plan control state: %d ",PCState->state);
-      while(PCState->state!=1){
-
-      }
+      ROS_INFO("plan control state: %d ",res.success);
       res.success = true;
       return true;
 
     }
+
 
     bool runGotoWaypoint(g2s_interface::runGOTO_WAYPOINT::Request &req,
       g2s_interface::runGOTO_WAYPOINT::Response &res)
@@ -300,10 +309,17 @@ namespace rsilauv
       DUNE::IMC::PlanManeuver pm;
       DUNE::IMC::PlanSpecification ps;
 
+      //calculate from relative position(NED) in relation to Fixed point.
+      geometry_msgs::Point desiredPoint;
+      desiredPoint = req.waypointPosition;
+      float deltaLat = desiredPoint.y/6386651.041660708; // divided by meters per radian latitude in Trondheim
+      float deltaLon = desiredPoint.x/2862544.348782668; // divided by meters per radian longditude in Trondheim
+
+
       // Goto
-      manGoto.lat = 1.1072639824284860;
-      manGoto.lon = 0.1806556449351842;
-      manGoto.z = 0;
+      manGoto.lat = 1.1072639824284860 + deltaLat; //todo: change to proper zero-point in time 
+      manGoto.lon = 0.1806556449351842 + deltaLon;
+      manGoto.z = desiredPoint.z;
       manGoto.z_units = DUNE::IMC::Z_DEPTH;
       manGoto.speed = 1.5;
       manGoto.speed_units = DUNE::IMC::SUNITS_METERS_PS;
@@ -532,6 +548,12 @@ namespace rsilauv
       ROS_INFO("[%s] Sent to TCP Server (PlanControl)",nodeName_.c_str());
     }
 
+    void sendToTcpServer(const DUNE::IMC::Abort &msg)
+    {
+      tcp_client_->write(&msg);
+      ROS_INFO("[%s] Sent to TCP Server (Abort)",nodeName_.c_str());
+    }
+
     bool runPowerStatus(g2s_interface::powerStatus::Request &req,
       g2s_interface::powerStatus::Response &res)
     {
@@ -578,7 +600,7 @@ namespace rsilauv
             ROS_INFO("\t - (vx,vy,vz): (%f,%f,%f)",float(ppp->vx),float(ppp->vy),float(ppp->vz));
             ROS_INFO("\t - (p,q,r): (%f,%f,%f)",float(ppp->p),float(ppp->q),float(ppp->r));
             ROS_INFO("\t - (depth,alt): (%f,%f)",float(ppp->depth),float(ppp->alt));
-            */
+           */ 
             //ROS_INFO("mysitu");
             break;
           }
@@ -673,8 +695,8 @@ namespace rsilauv
           case IMC_ID_PLANCONTROLSTATE : 
           {
             //ROS_INFO("PlanControl state responding");
-            const DUNE::IMC::PlanControlState* PCState = static_cast<const DUNE::IMC::PlanControlState*>(msg);
-            ROS_INFO("plan control state: %d ",PCState->state); //begin here thursday
+            const DUNE::IMC::PlanControlState* ppp = static_cast<const DUNE::IMC::PlanControlState*>(msg);
+            //ROS_INFO("plan control state: %d ",PCState->state); //begin here thursday
             break;
           }
 
@@ -685,8 +707,10 @@ namespace rsilauv
           }
 
           default : 
-            ROS_INFO("Unknown message type, please identfy message.");
+          {
+            ROS_INFO("Unknown message type, please identify message.");
             ROS_INFO("MSG_ID: %d (?)", int(msg->getId()));
+          }
         }
       }
     }

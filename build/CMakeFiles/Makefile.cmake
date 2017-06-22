@@ -244,6 +244,7 @@ SET(CMAKE_DEPEND_INFO_FILES
   "rgi_rsi/CMakeFiles/actionlib_msgs_generate_messages_cpp.dir/DependInfo.cmake"
   "rgi_rsi/CMakeFiles/actionlib_msgs_generate_messages_lisp.dir/DependInfo.cmake"
   "rgi_rsi/CMakeFiles/actionlib_msgs_generate_messages_py.dir/DependInfo.cmake"
+  "rgi_rsi/CMakeFiles/fakeRgi_node.dir/DependInfo.cmake"
   "rgi_rsi/CMakeFiles/g2s_interface_gencpp.dir/DependInfo.cmake"
   "rgi_rsi/CMakeFiles/g2s_interface_generate_messages.dir/DependInfo.cmake"
   "rgi_rsi/CMakeFiles/g2s_interface_generate_messages_cpp.dir/DependInfo.cmake"

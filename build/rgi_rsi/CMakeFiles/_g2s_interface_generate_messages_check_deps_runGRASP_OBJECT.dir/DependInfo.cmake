@@ -17,6 +17,9 @@ SET(CMAKE_TARGET_LINKED_INFO_FILES
 # The include file search paths:
 SET(CMAKE_C_TARGET_INCLUDE_PATH
   "/home/uvlab/swarms/catkin_ws/devel/include"
+  "/home/uvlab/swarms/catkin_ws/src/rgi_rsi/include"
+  "/opt/ros/indigo/include"
+  "/include"
   )
 SET(CMAKE_CXX_TARGET_INCLUDE_PATH ${CMAKE_C_TARGET_INCLUDE_PATH})
 SET(CMAKE_Fortran_TARGET_INCLUDE_PATH ${CMAKE_C_TARGET_INCLUDE_PATH})

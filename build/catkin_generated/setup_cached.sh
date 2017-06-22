@@ -7,12 +7,6 @@
 # new environment variables
 
 # modified environment variables
-export CMAKE_PREFIX_PATH="/home/uvlab/swarms/catkin_ws/devel:$CMAKE_PREFIX_PATH"
-export CPATH="/home/uvlab/swarms/catkin_ws/devel/include:$CPATH"
-export LD_LIBRARY_PATH="/home/uvlab/swarms/catkin_ws/devel/lib:/home/uvlab/swarms/catkin_ws/devel/lib/x86_64-linux-gnu:$LD_LIBRARY_PATH"
-export PATH="/home/uvlab/swarms/catkin_ws/devel/bin:$PATH"
-export PKG_CONFIG_PATH="/home/uvlab/swarms/catkin_ws/devel/lib/pkgconfig:/home/uvlab/swarms/catkin_ws/devel/lib/x86_64-linux-gnu/pkgconfig:$PKG_CONFIG_PATH"
+export LD_LIBRARY_PATH="/home/uvlab/swarms/catkin_ws/devel/lib/x86_64-linux-gnu:/opt/ros/indigo/lib/x86_64-linux-gnu:/home/uvlab/swarms/catkin_ws/devel/lib:/home/uvlab/catkin_ws/devel/lib:/opt/ros/indigo/lib"
+export PKG_CONFIG_PATH="/home/uvlab/swarms/catkin_ws/devel/lib/x86_64-linux-gnu/pkgconfig:/opt/ros/indigo/lib/x86_64-linux-gnu/pkgconfig:/home/uvlab/swarms/catkin_ws/devel/lib/pkgconfig:/home/uvlab/catkin_ws/devel/lib/pkgconfig:/opt/ros/indigo/lib/pkgconfig:/usr/local/lib/pkgconfig"
 export PWD="/home/uvlab/swarms/catkin_ws/build"
-export PYTHONPATH="/home/uvlab/swarms/catkin_ws/devel/lib/python2.7/dist-packages:$PYTHONPATH"
-export ROSLISP_PACKAGE_DIRECTORIES="/home/uvlab/swarms/catkin_ws/devel/share/common-lisp"
-export ROS_PACKAGE_PATH="/home/uvlab/swarms/catkin_ws/src:$ROS_PACKAGE_PATH"
