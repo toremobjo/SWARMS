@@ -282,6 +282,9 @@ rsi_lauv_ntnu/CMakeFiles/bridgeLauvNode.dir/src/bridgeLauvNode.cpp.o: /home/uvla
 rsi_lauv_ntnu/CMakeFiles/bridgeLauvNode.dir/src/bridgeLauvNode.cpp.o: /home/uvlab/swarms/catkin_ws/devel/include/g2s_interface/abort_Action.h
 rsi_lauv_ntnu/CMakeFiles/bridgeLauvNode.dir/src/bridgeLauvNode.cpp.o: /home/uvlab/swarms/catkin_ws/devel/include/g2s_interface/abort_ActionRequest.h
 rsi_lauv_ntnu/CMakeFiles/bridgeLauvNode.dir/src/bridgeLauvNode.cpp.o: /home/uvlab/swarms/catkin_ws/devel/include/g2s_interface/abort_ActionResponse.h
+rsi_lauv_ntnu/CMakeFiles/bridgeLauvNode.dir/src/bridgeLauvNode.cpp.o: /home/uvlab/swarms/catkin_ws/devel/include/g2s_interface/actionStatus.h
+rsi_lauv_ntnu/CMakeFiles/bridgeLauvNode.dir/src/bridgeLauvNode.cpp.o: /home/uvlab/swarms/catkin_ws/devel/include/g2s_interface/actionStatusRequest.h
+rsi_lauv_ntnu/CMakeFiles/bridgeLauvNode.dir/src/bridgeLauvNode.cpp.o: /home/uvlab/swarms/catkin_ws/devel/include/g2s_interface/actionStatusResponse.h
 rsi_lauv_ntnu/CMakeFiles/bridgeLauvNode.dir/src/bridgeLauvNode.cpp.o: /home/uvlab/swarms/catkin_ws/devel/include/g2s_interface/endOfAction.h
 rsi_lauv_ntnu/CMakeFiles/bridgeLauvNode.dir/src/bridgeLauvNode.cpp.o: /home/uvlab/swarms/catkin_ws/devel/include/g2s_interface/environmentData.h
 rsi_lauv_ntnu/CMakeFiles/bridgeLauvNode.dir/src/bridgeLauvNode.cpp.o: /home/uvlab/swarms/catkin_ws/devel/include/g2s_interface/powerStatus.h

@@ -283,6 +283,9 @@ rsi_lauv_ntnu/CMakeFiles/bridgeLauvNode.dir/src/bridgeLauvNode.cpp.o
  /home/uvlab/swarms/catkin_ws/devel/include/g2s_interface/abort_Action.h
  /home/uvlab/swarms/catkin_ws/devel/include/g2s_interface/abort_ActionRequest.h
  /home/uvlab/swarms/catkin_ws/devel/include/g2s_interface/abort_ActionResponse.h
+ /home/uvlab/swarms/catkin_ws/devel/include/g2s_interface/actionStatus.h
+ /home/uvlab/swarms/catkin_ws/devel/include/g2s_interface/actionStatusRequest.h
+ /home/uvlab/swarms/catkin_ws/devel/include/g2s_interface/actionStatusResponse.h
  /home/uvlab/swarms/catkin_ws/devel/include/g2s_interface/endOfAction.h
  /home/uvlab/swarms/catkin_ws/devel/include/g2s_interface/environmentData.h
  /home/uvlab/swarms/catkin_ws/devel/include/g2s_interface/powerStatus.h

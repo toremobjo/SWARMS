@@ -22,6 +22,7 @@ private:
 	ros::Subscriber actions;
 
 	ros::ServiceClient abortClient;
+	ros::ServiceClient stopClient;
 	ros::ServiceClient goto1Client;
 	ros::ServiceClient goto2Client;
 
@@ -29,6 +30,7 @@ private:
 
 	void runAction(int action);
 	void abortCurrentMission();
+	void stopCurrentAction();
 	void gotoWay1();
 	void gotoWay2();
 
@@ -41,6 +43,7 @@ fRgi::fRgi(){
 	abortClient = nh.serviceClient<g2s_interface::abort_Action>("abort_Action",0);
 	goto1Client = nh.serviceClient<g2s_interface::runGOTO_WAYPOINT>("runGOTO_WAYPOINT",0);
 	goto2Client = nh.serviceClient<g2s_interface::runGOTO_WAYPOINT>("runGOTO_WAYPOINT",0);
+	stopClient 	= nh.serviceClient<g2s_interface::abort_Action>("stop_Action",0);
 }
 
 void fRgi::spin(){
@@ -62,7 +65,7 @@ void fRgi::runAction(int action){
 	ROS_INFO("Running action: %d ", action);
 	switch(action){
 		case ACTION_DEF_ABORT 	: abortCurrentMission(); break;
-		//case ACTION_DEF_STOP	: stopCurrentAction() break;
+		case ACTION_DEF_STOP	: stopCurrentAction(); break;
 		case ACTION_DEF_GOTO1	: gotoWay1(); break;
 		case ACTION_DEF_GOTO2	: gotoWay2(); break;
 		default 				: ROS_INFO("Unknown action command");
@@ -75,6 +78,14 @@ void fRgi::abortCurrentMission(){
 	if (abortClient.call(ab))
 	{
 		ROS_INFO("Abort Successful");
+	}
+}
+
+void fRgi::stopCurrentAction(){
+	g2s_interface::abort_Action ab;
+	if (stopClient.call(ab))
+	{
+		ROS_INFO("Stop Successful");
 	}
 }
 
@@ -104,8 +115,8 @@ void fRgi::gotoWay2(){
 
 	//specify a point
 	geometry_msgs::Point desiredPos;
-	desiredPos.x = 100;
-	desiredPos.y = 100;
+	desiredPos.x = 400;
+	desiredPos.y = 0;
 	desiredPos.z = 0;
 
 	go.request.waypointPosition = desiredPos;
