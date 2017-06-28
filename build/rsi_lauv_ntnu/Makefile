@@ -178,18 +178,32 @@ _rsi_lauv_ntnu_generate_messages_check_deps_testSrvRsiLauv/fast:
 .PHONY : _rsi_lauv_ntnu_generate_messages_check_deps_testSrvRsiLauv/fast
 
 # Convenience name for target.
-rsi_lauv_ntnu/CMakeFiles/bridgeLauvNode.dir/rule:
-	cd /home/uvlab/swarms/catkin_ws/build && $(MAKE) -f CMakeFiles/Makefile2 rsi_lauv_ntnu/CMakeFiles/bridgeLauvNode.dir/rule
-.PHONY : rsi_lauv_ntnu/CMakeFiles/bridgeLauvNode.dir/rule
+rsi_lauv_ntnu/CMakeFiles/actionBridge.dir/rule:
+	cd /home/uvlab/swarms/catkin_ws/build && $(MAKE) -f CMakeFiles/Makefile2 rsi_lauv_ntnu/CMakeFiles/actionBridge.dir/rule
+.PHONY : rsi_lauv_ntnu/CMakeFiles/actionBridge.dir/rule
 
 # Convenience name for target.
-bridgeLauvNode: rsi_lauv_ntnu/CMakeFiles/bridgeLauvNode.dir/rule
-.PHONY : bridgeLauvNode
+actionBridge: rsi_lauv_ntnu/CMakeFiles/actionBridge.dir/rule
+.PHONY : actionBridge
 
 # fast build rule for target.
-bridgeLauvNode/fast:
-	cd /home/uvlab/swarms/catkin_ws/build && $(MAKE) -f rsi_lauv_ntnu/CMakeFiles/bridgeLauvNode.dir/build.make rsi_lauv_ntnu/CMakeFiles/bridgeLauvNode.dir/build
-.PHONY : bridgeLauvNode/fast
+actionBridge/fast:
+	cd /home/uvlab/swarms/catkin_ws/build && $(MAKE) -f rsi_lauv_ntnu/CMakeFiles/actionBridge.dir/build.make rsi_lauv_ntnu/CMakeFiles/actionBridge.dir/build
+.PHONY : actionBridge/fast
+
+# Convenience name for target.
+rsi_lauv_ntnu/CMakeFiles/bridgeConnection.dir/rule:
+	cd /home/uvlab/swarms/catkin_ws/build && $(MAKE) -f CMakeFiles/Makefile2 rsi_lauv_ntnu/CMakeFiles/bridgeConnection.dir/rule
+.PHONY : rsi_lauv_ntnu/CMakeFiles/bridgeConnection.dir/rule
+
+# Convenience name for target.
+bridgeConnection: rsi_lauv_ntnu/CMakeFiles/bridgeConnection.dir/rule
+.PHONY : bridgeConnection
+
+# fast build rule for target.
+bridgeConnection/fast:
+	cd /home/uvlab/swarms/catkin_ws/build && $(MAKE) -f rsi_lauv_ntnu/CMakeFiles/bridgeConnection.dir/build.make rsi_lauv_ntnu/CMakeFiles/bridgeConnection.dir/build
+.PHONY : bridgeConnection/fast
 
 # Convenience name for target.
 rsi_lauv_ntnu/CMakeFiles/rsi_lauv_ntnu_gencpp.dir/rule:
@@ -317,29 +331,53 @@ zeroLauvNode/fast:
 	cd /home/uvlab/swarms/catkin_ws/build && $(MAKE) -f rsi_lauv_ntnu/CMakeFiles/zeroLauvNode.dir/build.make rsi_lauv_ntnu/CMakeFiles/zeroLauvNode.dir/build
 .PHONY : zeroLauvNode/fast
 
-src/bridgeLauvNode.o: src/bridgeLauvNode.cpp.o
-.PHONY : src/bridgeLauvNode.o
+src/actionBridge.o: src/actionBridge.cpp.o
+.PHONY : src/actionBridge.o
 
 # target to build an object file
-src/bridgeLauvNode.cpp.o:
-	cd /home/uvlab/swarms/catkin_ws/build && $(MAKE) -f rsi_lauv_ntnu/CMakeFiles/bridgeLauvNode.dir/build.make rsi_lauv_ntnu/CMakeFiles/bridgeLauvNode.dir/src/bridgeLauvNode.cpp.o
-.PHONY : src/bridgeLauvNode.cpp.o
+src/actionBridge.cpp.o:
+	cd /home/uvlab/swarms/catkin_ws/build && $(MAKE) -f rsi_lauv_ntnu/CMakeFiles/actionBridge.dir/build.make rsi_lauv_ntnu/CMakeFiles/actionBridge.dir/src/actionBridge.cpp.o
+.PHONY : src/actionBridge.cpp.o
 
-src/bridgeLauvNode.i: src/bridgeLauvNode.cpp.i
-.PHONY : src/bridgeLauvNode.i
+src/actionBridge.i: src/actionBridge.cpp.i
+.PHONY : src/actionBridge.i
 
 # target to preprocess a source file
-src/bridgeLauvNode.cpp.i:
-	cd /home/uvlab/swarms/catkin_ws/build && $(MAKE) -f rsi_lauv_ntnu/CMakeFiles/bridgeLauvNode.dir/build.make rsi_lauv_ntnu/CMakeFiles/bridgeLauvNode.dir/src/bridgeLauvNode.cpp.i
-.PHONY : src/bridgeLauvNode.cpp.i
+src/actionBridge.cpp.i:
+	cd /home/uvlab/swarms/catkin_ws/build && $(MAKE) -f rsi_lauv_ntnu/CMakeFiles/actionBridge.dir/build.make rsi_lauv_ntnu/CMakeFiles/actionBridge.dir/src/actionBridge.cpp.i
+.PHONY : src/actionBridge.cpp.i
 
-src/bridgeLauvNode.s: src/bridgeLauvNode.cpp.s
-.PHONY : src/bridgeLauvNode.s
+src/actionBridge.s: src/actionBridge.cpp.s
+.PHONY : src/actionBridge.s
 
 # target to generate assembly for a file
-src/bridgeLauvNode.cpp.s:
-	cd /home/uvlab/swarms/catkin_ws/build && $(MAKE) -f rsi_lauv_ntnu/CMakeFiles/bridgeLauvNode.dir/build.make rsi_lauv_ntnu/CMakeFiles/bridgeLauvNode.dir/src/bridgeLauvNode.cpp.s
-.PHONY : src/bridgeLauvNode.cpp.s
+src/actionBridge.cpp.s:
+	cd /home/uvlab/swarms/catkin_ws/build && $(MAKE) -f rsi_lauv_ntnu/CMakeFiles/actionBridge.dir/build.make rsi_lauv_ntnu/CMakeFiles/actionBridge.dir/src/actionBridge.cpp.s
+.PHONY : src/actionBridge.cpp.s
+
+src/bridgeConnection.o: src/bridgeConnection.cpp.o
+.PHONY : src/bridgeConnection.o
+
+# target to build an object file
+src/bridgeConnection.cpp.o:
+	cd /home/uvlab/swarms/catkin_ws/build && $(MAKE) -f rsi_lauv_ntnu/CMakeFiles/bridgeConnection.dir/build.make rsi_lauv_ntnu/CMakeFiles/bridgeConnection.dir/src/bridgeConnection.cpp.o
+.PHONY : src/bridgeConnection.cpp.o
+
+src/bridgeConnection.i: src/bridgeConnection.cpp.i
+.PHONY : src/bridgeConnection.i
+
+# target to preprocess a source file
+src/bridgeConnection.cpp.i:
+	cd /home/uvlab/swarms/catkin_ws/build && $(MAKE) -f rsi_lauv_ntnu/CMakeFiles/bridgeConnection.dir/build.make rsi_lauv_ntnu/CMakeFiles/bridgeConnection.dir/src/bridgeConnection.cpp.i
+.PHONY : src/bridgeConnection.cpp.i
+
+src/bridgeConnection.s: src/bridgeConnection.cpp.s
+.PHONY : src/bridgeConnection.s
+
+# target to generate assembly for a file
+src/bridgeConnection.cpp.s:
+	cd /home/uvlab/swarms/catkin_ws/build && $(MAKE) -f rsi_lauv_ntnu/CMakeFiles/bridgeConnection.dir/build.make rsi_lauv_ntnu/CMakeFiles/bridgeConnection.dir/src/bridgeConnection.cpp.s
+.PHONY : src/bridgeConnection.cpp.s
 
 src/verboseLauvNode.o: src/verboseLauvNode.cpp.o
 .PHONY : src/verboseLauvNode.o
@@ -397,7 +435,8 @@ help:
 	@echo "... depend"
 	@echo "... _rsi_lauv_ntnu_generate_messages_check_deps_testMsgRsiLauv"
 	@echo "... _rsi_lauv_ntnu_generate_messages_check_deps_testSrvRsiLauv"
-	@echo "... bridgeLauvNode"
+	@echo "... actionBridge"
+	@echo "... bridgeConnection"
 	@echo "... edit_cache"
 	@echo "... install"
 	@echo "... install/local"
@@ -414,9 +453,12 @@ help:
 	@echo "... test"
 	@echo "... verboseLauvNode"
 	@echo "... zeroLauvNode"
-	@echo "... src/bridgeLauvNode.o"
-	@echo "... src/bridgeLauvNode.i"
-	@echo "... src/bridgeLauvNode.s"
+	@echo "... src/actionBridge.o"
+	@echo "... src/actionBridge.i"
+	@echo "... src/actionBridge.s"
+	@echo "... src/bridgeConnection.o"
+	@echo "... src/bridgeConnection.i"
+	@echo "... src/bridgeConnection.s"
 	@echo "... src/verboseLauvNode.o"
 	@echo "... src/verboseLauvNode.i"
 	@echo "... src/verboseLauvNode.s"

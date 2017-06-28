@@ -35,10 +35,11 @@
 /home/uvlab/swarms/catkin_ws/build/rgi_rsi/CMakeFiles/_g2s_interface_generate_messages_check_deps_waterData.dir
 /home/uvlab/swarms/catkin_ws/build/rsi_lauv_ntnu/CMakeFiles/_rsi_lauv_ntnu_generate_messages_check_deps_testMsgRsiLauv.dir
 /home/uvlab/swarms/catkin_ws/build/rsi_lauv_ntnu/CMakeFiles/_rsi_lauv_ntnu_generate_messages_check_deps_testSrvRsiLauv.dir
+/home/uvlab/swarms/catkin_ws/build/rsi_lauv_ntnu/CMakeFiles/actionBridge.dir
 /home/uvlab/swarms/catkin_ws/build/rgi_rsi/CMakeFiles/actionlib_msgs_generate_messages_cpp.dir
 /home/uvlab/swarms/catkin_ws/build/rgi_rsi/CMakeFiles/actionlib_msgs_generate_messages_lisp.dir
 /home/uvlab/swarms/catkin_ws/build/rgi_rsi/CMakeFiles/actionlib_msgs_generate_messages_py.dir
-/home/uvlab/swarms/catkin_ws/build/rsi_lauv_ntnu/CMakeFiles/bridgeLauvNode.dir
+/home/uvlab/swarms/catkin_ws/build/rsi_lauv_ntnu/CMakeFiles/bridgeConnection.dir
 /home/uvlab/swarms/catkin_ws/build/CMakeFiles/clean_test_results.dir
 /home/uvlab/swarms/catkin_ws/build/CMakeFiles/clean_test_results_Project.dir
 /home/uvlab/swarms/catkin_ws/build/CMakeFiles/download_extra_data.dir

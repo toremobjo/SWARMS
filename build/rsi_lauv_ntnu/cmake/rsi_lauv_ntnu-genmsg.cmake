@@ -2,7 +2,7 @@
 
 message(STATUS "rsi_lauv_ntnu: 1 messages, 1 services")
 
-set(MSG_I_FLAGS "-Irsi_lauv_ntnu:/home/uvlab/swarms/catkin_ws/src/rsi_lauv_ntnu/msg;-Istd_msgs:/opt/ros/indigo/share/std_msgs/cmake/../msg")
+set(MSG_I_FLAGS "-Irsi_lauv_ntnu:/home/uvlab/swarms/catkin_ws/src/rsi_lauv_ntnu/msg;-Istd_msgs:/opt/ros/indigo/share/std_msgs/cmake/../msg;-Igeometry_msgs:/opt/ros/indigo/share/geometry_msgs/cmake/../msg")
 
 # Find all generators
 find_package(gencpp REQUIRED)
@@ -162,6 +162,7 @@ if(gencpp_INSTALL_DIR AND EXISTS ${CATKIN_DEVEL_PREFIX}/${gencpp_INSTALL_DIR}/rs
   )
 endif()
 add_dependencies(rsi_lauv_ntnu_generate_messages_cpp std_msgs_generate_messages_cpp)
+add_dependencies(rsi_lauv_ntnu_generate_messages_cpp geometry_msgs_generate_messages_cpp)
 
 if(genlisp_INSTALL_DIR AND EXISTS ${CATKIN_DEVEL_PREFIX}/${genlisp_INSTALL_DIR}/rsi_lauv_ntnu)
   # install generated code
@@ -171,6 +172,7 @@ if(genlisp_INSTALL_DIR AND EXISTS ${CATKIN_DEVEL_PREFIX}/${genlisp_INSTALL_DIR}/
   )
 endif()
 add_dependencies(rsi_lauv_ntnu_generate_messages_lisp std_msgs_generate_messages_lisp)
+add_dependencies(rsi_lauv_ntnu_generate_messages_lisp geometry_msgs_generate_messages_lisp)
 
 if(genpy_INSTALL_DIR AND EXISTS ${CATKIN_DEVEL_PREFIX}/${genpy_INSTALL_DIR}/rsi_lauv_ntnu)
   install(CODE "execute_process(COMMAND \"/usr/bin/python\" -m compileall \"${CATKIN_DEVEL_PREFIX}/${genpy_INSTALL_DIR}/rsi_lauv_ntnu\")")
@@ -181,3 +183,4 @@ if(genpy_INSTALL_DIR AND EXISTS ${CATKIN_DEVEL_PREFIX}/${genpy_INSTALL_DIR}/rsi_
   )
 endif()
 add_dependencies(rsi_lauv_ntnu_generate_messages_py std_msgs_generate_messages_py)
+add_dependencies(rsi_lauv_ntnu_generate_messages_py geometry_msgs_generate_messages_py)

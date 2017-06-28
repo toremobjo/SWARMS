@@ -1073,17 +1073,30 @@ _rsi_lauv_ntnu_generate_messages_check_deps_testSrvRsiLauv/fast:
 .PHONY : _rsi_lauv_ntnu_generate_messages_check_deps_testSrvRsiLauv/fast
 
 #=============================================================================
-# Target rules for targets named bridgeLauvNode
+# Target rules for targets named actionBridge
 
 # Build rule for target.
-bridgeLauvNode: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 bridgeLauvNode
-.PHONY : bridgeLauvNode
+actionBridge: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 actionBridge
+.PHONY : actionBridge
 
 # fast build rule for target.
-bridgeLauvNode/fast:
-	$(MAKE) -f rsi_lauv_ntnu/CMakeFiles/bridgeLauvNode.dir/build.make rsi_lauv_ntnu/CMakeFiles/bridgeLauvNode.dir/build
-.PHONY : bridgeLauvNode/fast
+actionBridge/fast:
+	$(MAKE) -f rsi_lauv_ntnu/CMakeFiles/actionBridge.dir/build.make rsi_lauv_ntnu/CMakeFiles/actionBridge.dir/build
+.PHONY : actionBridge/fast
+
+#=============================================================================
+# Target rules for targets named bridgeConnection
+
+# Build rule for target.
+bridgeConnection: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 bridgeConnection
+.PHONY : bridgeConnection
+
+# fast build rule for target.
+bridgeConnection/fast:
+	$(MAKE) -f rsi_lauv_ntnu/CMakeFiles/bridgeConnection.dir/build.make rsi_lauv_ntnu/CMakeFiles/bridgeConnection.dir/build
+.PHONY : bridgeConnection/fast
 
 #=============================================================================
 # Target rules for targets named rsi_lauv_ntnu_gencpp
@@ -1286,7 +1299,8 @@ help:
 	@echo "... std_msgs_generate_messages_py"
 	@echo "... _rsi_lauv_ntnu_generate_messages_check_deps_testMsgRsiLauv"
 	@echo "... _rsi_lauv_ntnu_generate_messages_check_deps_testSrvRsiLauv"
-	@echo "... bridgeLauvNode"
+	@echo "... actionBridge"
+	@echo "... bridgeConnection"
 	@echo "... rsi_lauv_ntnu_gencpp"
 	@echo "... rsi_lauv_ntnu_generate_messages"
 	@echo "... rsi_lauv_ntnu_generate_messages_cpp"

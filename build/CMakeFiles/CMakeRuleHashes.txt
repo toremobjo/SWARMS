@@ -34,8 +34,8 @@ eccafa2b37bb861155a1a18fca4e5ff2 /home/uvlab/swarms/catkin_ws/devel/include/g2s_
 1ffbb4c268df4e28e01f72b8242f8e19 /home/uvlab/swarms/catkin_ws/devel/include/g2s_interface/stopEqptAction.h
 8f02e2c4a598423762d24c25a20e0665 /home/uvlab/swarms/catkin_ws/devel/include/g2s_interface/suspend_Action.h
 76bc379be47609ae18923e9f8bee0b03 /home/uvlab/swarms/catkin_ws/devel/include/g2s_interface/waterData.h
-ca098749d6faff4c13bb8ce107041bd6 /home/uvlab/swarms/catkin_ws/devel/include/rsi_lauv_ntnu/testMsgRsiLauv.h
-995d9cc2d78bb28333cd0f1cbac5683c /home/uvlab/swarms/catkin_ws/devel/include/rsi_lauv_ntnu/testSrvRsiLauv.h
+bf2ae4fc76a4827c08b2912dfb479322 /home/uvlab/swarms/catkin_ws/devel/include/rsi_lauv_ntnu/testMsgRsiLauv.h
+47e02eaeb78f128082f69551e6bc4c35 /home/uvlab/swarms/catkin_ws/devel/include/rsi_lauv_ntnu/testSrvRsiLauv.h
 0d390e2d8dd8a7c6bd695fac6b1ae726 /home/uvlab/swarms/catkin_ws/devel/lib/python2.7/dist-packages/g2s_interface/msg/__init__.py
 fe308283a65e4838bc4448cb5c572cf2 /home/uvlab/swarms/catkin_ws/devel/lib/python2.7/dist-packages/g2s_interface/msg/_endOfAction.py
 8064ed95b44fa28c400fc94f81281980 /home/uvlab/swarms/catkin_ws/devel/lib/python2.7/dist-packages/g2s_interface/msg/_environmentData.py
@@ -74,9 +74,9 @@ f5885e56e0e2e245e14fc55b9cda249a /home/uvlab/swarms/catkin_ws/devel/lib/python2.
 270e0bd8fa27dc8ab180bcc251616c9a /home/uvlab/swarms/catkin_ws/devel/lib/python2.7/dist-packages/g2s_interface/srv/_stopEqptAction.py
 f98adc9d258a0f692faac0558f7f2745 /home/uvlab/swarms/catkin_ws/devel/lib/python2.7/dist-packages/g2s_interface/srv/_suspend_Action.py
 4bba48fe75f9033cf579dde747e0b3c5 /home/uvlab/swarms/catkin_ws/devel/lib/python2.7/dist-packages/rsi_lauv_ntnu/msg/__init__.py
-d6d26b2abf32541ee9ca0b005299c9ae /home/uvlab/swarms/catkin_ws/devel/lib/python2.7/dist-packages/rsi_lauv_ntnu/msg/_testMsgRsiLauv.py
+ea04fba553df901c6d1e1c691b79e785 /home/uvlab/swarms/catkin_ws/devel/lib/python2.7/dist-packages/rsi_lauv_ntnu/msg/_testMsgRsiLauv.py
 f28088957fa7568c421561ff111c6c6b /home/uvlab/swarms/catkin_ws/devel/lib/python2.7/dist-packages/rsi_lauv_ntnu/srv/__init__.py
-b4fcf84a0b77a704ffee6e29911871d1 /home/uvlab/swarms/catkin_ws/devel/lib/python2.7/dist-packages/rsi_lauv_ntnu/srv/_testSrvRsiLauv.py
+0581ad338aa57eae347716666bd74fc9 /home/uvlab/swarms/catkin_ws/devel/lib/python2.7/dist-packages/rsi_lauv_ntnu/srv/_testSrvRsiLauv.py
 168fab2b587966cf93a490fdf7fc1cc5 /home/uvlab/swarms/catkin_ws/devel/share/common-lisp/ros/g2s_interface/msg/endOfAction.lisp
 07d31e0fbf6ed75dfa62f86c21bba590 /home/uvlab/swarms/catkin_ws/devel/share/common-lisp/ros/g2s_interface/msg/environmentData.lisp
 86569c04f14f4648f661bbcaae54bd52 /home/uvlab/swarms/catkin_ws/devel/share/common-lisp/ros/g2s_interface/msg/robotAlarm.lisp
@@ -112,8 +112,8 @@ de08775a3bcc1878e80275f1ef13c2a3 /home/uvlab/swarms/catkin_ws/devel/share/common
 98383c23d8d9b6b02a9a6e6a49fe6ff4 /home/uvlab/swarms/catkin_ws/devel/share/common-lisp/ros/g2s_interface/srv/runWAIT.lisp
 ccef23179bc51f99f62d9578e37186fd /home/uvlab/swarms/catkin_ws/devel/share/common-lisp/ros/g2s_interface/srv/stopEqptAction.lisp
 19e7d2fce9d1452f63ed1292ea953d52 /home/uvlab/swarms/catkin_ws/devel/share/common-lisp/ros/g2s_interface/srv/suspend_Action.lisp
-07bc7fc6f943787654cd39d1ff7aad14 /home/uvlab/swarms/catkin_ws/devel/share/common-lisp/ros/rsi_lauv_ntnu/msg/testMsgRsiLauv.lisp
-d9a538bf7822ce52efa7574db4046011 /home/uvlab/swarms/catkin_ws/devel/share/common-lisp/ros/rsi_lauv_ntnu/srv/testSrvRsiLauv.lisp
+d33c1412403b88c66e1560448643fd2d /home/uvlab/swarms/catkin_ws/devel/share/common-lisp/ros/rsi_lauv_ntnu/msg/testMsgRsiLauv.lisp
+7b6a2aaa20550a9c7b751a3aa8a9bd75 /home/uvlab/swarms/catkin_ws/devel/share/common-lisp/ros/rsi_lauv_ntnu/srv/testSrvRsiLauv.lisp
 ca2bb161be4a97b5d8408e1ed7d7fada CMakeFiles/clean_test_results
 ab728082172797602cd1b818b2d03c6c CMakeFiles/clean_test_results_Project
 3738376ea300efff9aeb90220a7b071e CMakeFiles/download_extra_data
