@@ -46,6 +46,7 @@ CMAKE_BINARY_DIR = /home/uvlab/swarms/catkin_ws/build
 include rsi_lauv_ntnu/CMakeFiles/rsi_lauv_ntnu_generate_messages_cpp.dir/progress.make
 
 rsi_lauv_ntnu/CMakeFiles/rsi_lauv_ntnu_generate_messages_cpp: /home/uvlab/swarms/catkin_ws/devel/include/rsi_lauv_ntnu/testMsgRsiLauv.h
+rsi_lauv_ntnu/CMakeFiles/rsi_lauv_ntnu_generate_messages_cpp: /home/uvlab/swarms/catkin_ws/devel/include/rsi_lauv_ntnu/testStationKeeping.h
 rsi_lauv_ntnu/CMakeFiles/rsi_lauv_ntnu_generate_messages_cpp: /home/uvlab/swarms/catkin_ws/devel/include/rsi_lauv_ntnu/testSrvRsiLauv.h
 
 /home/uvlab/swarms/catkin_ws/devel/include/rsi_lauv_ntnu/testMsgRsiLauv.h: /opt/ros/indigo/share/gencpp/cmake/../../../lib/gencpp/gen_cpp.py
@@ -56,16 +57,25 @@ rsi_lauv_ntnu/CMakeFiles/rsi_lauv_ntnu_generate_messages_cpp: /home/uvlab/swarms
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold "Generating C++ code from rsi_lauv_ntnu/testMsgRsiLauv.msg"
 	cd /home/uvlab/swarms/catkin_ws/build/rsi_lauv_ntnu && ../catkin_generated/env_cached.sh /usr/bin/python /opt/ros/indigo/share/gencpp/cmake/../../../lib/gencpp/gen_cpp.py /home/uvlab/swarms/catkin_ws/src/rsi_lauv_ntnu/msg/testMsgRsiLauv.msg -Irsi_lauv_ntnu:/home/uvlab/swarms/catkin_ws/src/rsi_lauv_ntnu/msg -Istd_msgs:/opt/ros/indigo/share/std_msgs/cmake/../msg -Igeometry_msgs:/opt/ros/indigo/share/geometry_msgs/cmake/../msg -p rsi_lauv_ntnu -o /home/uvlab/swarms/catkin_ws/devel/include/rsi_lauv_ntnu -e /opt/ros/indigo/share/gencpp/cmake/..
 
+/home/uvlab/swarms/catkin_ws/devel/include/rsi_lauv_ntnu/testStationKeeping.h: /opt/ros/indigo/share/gencpp/cmake/../../../lib/gencpp/gen_cpp.py
+/home/uvlab/swarms/catkin_ws/devel/include/rsi_lauv_ntnu/testStationKeeping.h: /home/uvlab/swarms/catkin_ws/src/rsi_lauv_ntnu/srv/testStationKeeping.srv
+/home/uvlab/swarms/catkin_ws/devel/include/rsi_lauv_ntnu/testStationKeeping.h: /opt/ros/indigo/share/gencpp/cmake/../msg.h.template
+/home/uvlab/swarms/catkin_ws/devel/include/rsi_lauv_ntnu/testStationKeeping.h: /opt/ros/indigo/share/gencpp/cmake/../srv.h.template
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/uvlab/swarms/catkin_ws/build/CMakeFiles $(CMAKE_PROGRESS_2)
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold "Generating C++ code from rsi_lauv_ntnu/testStationKeeping.srv"
+	cd /home/uvlab/swarms/catkin_ws/build/rsi_lauv_ntnu && ../catkin_generated/env_cached.sh /usr/bin/python /opt/ros/indigo/share/gencpp/cmake/../../../lib/gencpp/gen_cpp.py /home/uvlab/swarms/catkin_ws/src/rsi_lauv_ntnu/srv/testStationKeeping.srv -Irsi_lauv_ntnu:/home/uvlab/swarms/catkin_ws/src/rsi_lauv_ntnu/msg -Istd_msgs:/opt/ros/indigo/share/std_msgs/cmake/../msg -Igeometry_msgs:/opt/ros/indigo/share/geometry_msgs/cmake/../msg -p rsi_lauv_ntnu -o /home/uvlab/swarms/catkin_ws/devel/include/rsi_lauv_ntnu -e /opt/ros/indigo/share/gencpp/cmake/..
+
 /home/uvlab/swarms/catkin_ws/devel/include/rsi_lauv_ntnu/testSrvRsiLauv.h: /opt/ros/indigo/share/gencpp/cmake/../../../lib/gencpp/gen_cpp.py
 /home/uvlab/swarms/catkin_ws/devel/include/rsi_lauv_ntnu/testSrvRsiLauv.h: /home/uvlab/swarms/catkin_ws/src/rsi_lauv_ntnu/srv/testSrvRsiLauv.srv
 /home/uvlab/swarms/catkin_ws/devel/include/rsi_lauv_ntnu/testSrvRsiLauv.h: /opt/ros/indigo/share/gencpp/cmake/../msg.h.template
 /home/uvlab/swarms/catkin_ws/devel/include/rsi_lauv_ntnu/testSrvRsiLauv.h: /opt/ros/indigo/share/gencpp/cmake/../srv.h.template
-	$(CMAKE_COMMAND) -E cmake_progress_report /home/uvlab/swarms/catkin_ws/build/CMakeFiles $(CMAKE_PROGRESS_2)
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/uvlab/swarms/catkin_ws/build/CMakeFiles $(CMAKE_PROGRESS_3)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold "Generating C++ code from rsi_lauv_ntnu/testSrvRsiLauv.srv"
 	cd /home/uvlab/swarms/catkin_ws/build/rsi_lauv_ntnu && ../catkin_generated/env_cached.sh /usr/bin/python /opt/ros/indigo/share/gencpp/cmake/../../../lib/gencpp/gen_cpp.py /home/uvlab/swarms/catkin_ws/src/rsi_lauv_ntnu/srv/testSrvRsiLauv.srv -Irsi_lauv_ntnu:/home/uvlab/swarms/catkin_ws/src/rsi_lauv_ntnu/msg -Istd_msgs:/opt/ros/indigo/share/std_msgs/cmake/../msg -Igeometry_msgs:/opt/ros/indigo/share/geometry_msgs/cmake/../msg -p rsi_lauv_ntnu -o /home/uvlab/swarms/catkin_ws/devel/include/rsi_lauv_ntnu -e /opt/ros/indigo/share/gencpp/cmake/..
 
 rsi_lauv_ntnu_generate_messages_cpp: rsi_lauv_ntnu/CMakeFiles/rsi_lauv_ntnu_generate_messages_cpp
 rsi_lauv_ntnu_generate_messages_cpp: /home/uvlab/swarms/catkin_ws/devel/include/rsi_lauv_ntnu/testMsgRsiLauv.h
+rsi_lauv_ntnu_generate_messages_cpp: /home/uvlab/swarms/catkin_ws/devel/include/rsi_lauv_ntnu/testStationKeeping.h
 rsi_lauv_ntnu_generate_messages_cpp: /home/uvlab/swarms/catkin_ws/devel/include/rsi_lauv_ntnu/testSrvRsiLauv.h
 rsi_lauv_ntnu_generate_messages_cpp: rsi_lauv_ntnu/CMakeFiles/rsi_lauv_ntnu_generate_messages_cpp.dir/build.make
 .PHONY : rsi_lauv_ntnu_generate_messages_cpp

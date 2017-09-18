@@ -6,4 +6,6 @@
   :components ((:file "_package")
     (:file "testSrvRsiLauv" :depends-on ("_package_testSrvRsiLauv"))
     (:file "_package_testSrvRsiLauv" :depends-on ("_package"))
+    (:file "testStationKeeping" :depends-on ("_package_testStationKeeping"))
+    (:file "_package_testStationKeeping" :depends-on ("_package"))
   ))

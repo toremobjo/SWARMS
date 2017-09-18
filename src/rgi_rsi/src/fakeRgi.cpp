@@ -95,6 +95,7 @@ void fRgi::abortCurrentMission(){
 		ROS_INFO("Abort Successful");
 	}
 	isRunningPath = false;
+	planCounter = 1;
 }
 
 void fRgi::stopCurrentAction(){
@@ -104,6 +105,7 @@ void fRgi::stopCurrentAction(){
 		ROS_INFO("Stop Successful");
 	}
 	isRunningPath = false;
+	planCounter = 1;
 
 }
 
@@ -120,13 +122,12 @@ void fRgi::gotoWay1(){
 	go.request.waypointPosition = desiredPos;
 	go.request.heading 					= 3.14/2;
 	endOfActionBool 						= false;
-	planCounter 								= 1;
+	//planCounter 								= 1;
 
 	if (goto1Client.call(go))
 	{
 		ROS_INFO("Go to waypoint 1, successfully sent.");
 	}
-
 }
 
 void fRgi::gotoWay2(){
@@ -137,7 +138,7 @@ void fRgi::gotoWay2(){
 	geometry_msgs::Point desiredPos;
 	desiredPos.x = 50;
 	desiredPos.y = 0;
-	desiredPos.z = 4;
+	desiredPos.z = 0;
 	go.request.heading = 0;
 
 	go.request.waypointPosition = desiredPos;
@@ -158,7 +159,7 @@ void fRgi::gotoWay3(){
 	geometry_msgs::Point desiredPos;
 	desiredPos.x = 50;
 	desiredPos.y = 50;
-	desiredPos.z = 3;
+	desiredPos.z = 0;
   go.request.heading = 3*3.14/2;
 
 	go.request.waypointPosition = desiredPos;
@@ -180,7 +181,7 @@ void fRgi::gotoWay4(){
 	geometry_msgs::Point desiredPos;
 	desiredPos.x = 0;
 	desiredPos.y = 50;
-	desiredPos.z = 5;
+	desiredPos.z = 0;
 
 	go.request.waypointPosition = desiredPos;
 	endOfActionBool = false;
@@ -190,7 +191,6 @@ void fRgi::gotoWay4(){
 	{
 		ROS_INFO("Go to waypoint 4, successfully sent.");
 	}
-
 }
 
 void fRgi::executePlan1(){
@@ -200,7 +200,7 @@ void fRgi::executePlan1(){
 		case 2 : gotoWay2(); break;
 		case 3 : gotoWay3(); break;
 		case 4 : gotoWay4(); break;
-		case 5 : gotoWay1(); break;
+		case 5 : gotoWay1() ; break;
 		default : planCounter = 1; isRunningPath=false; break;
 	}
 

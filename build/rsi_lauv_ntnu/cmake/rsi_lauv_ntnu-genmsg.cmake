@@ -1,6 +1,6 @@
 # generated from genmsg/cmake/pkg-genmsg.cmake.em
 
-message(STATUS "rsi_lauv_ntnu: 1 messages, 1 services")
+message(STATUS "rsi_lauv_ntnu: 1 messages, 2 services")
 
 set(MSG_I_FLAGS "-Irsi_lauv_ntnu:/home/uvlab/swarms/catkin_ws/src/rsi_lauv_ntnu/msg;-Istd_msgs:/opt/ros/indigo/share/std_msgs/cmake/../msg;-Igeometry_msgs:/opt/ros/indigo/share/geometry_msgs/cmake/../msg")
 
@@ -18,6 +18,11 @@ add_custom_target(rsi_lauv_ntnu_generate_messages ALL)
 get_filename_component(_filename "/home/uvlab/swarms/catkin_ws/src/rsi_lauv_ntnu/msg/testMsgRsiLauv.msg" NAME_WE)
 add_custom_target(_rsi_lauv_ntnu_generate_messages_check_deps_${_filename}
   COMMAND ${CATKIN_ENV} ${PYTHON_EXECUTABLE} ${GENMSG_CHECK_DEPS_SCRIPT} "rsi_lauv_ntnu" "/home/uvlab/swarms/catkin_ws/src/rsi_lauv_ntnu/msg/testMsgRsiLauv.msg" "std_msgs/Header"
+)
+
+get_filename_component(_filename "/home/uvlab/swarms/catkin_ws/src/rsi_lauv_ntnu/srv/testStationKeeping.srv" NAME_WE)
+add_custom_target(_rsi_lauv_ntnu_generate_messages_check_deps_${_filename}
+  COMMAND ${CATKIN_ENV} ${PYTHON_EXECUTABLE} ${GENMSG_CHECK_DEPS_SCRIPT} "rsi_lauv_ntnu" "/home/uvlab/swarms/catkin_ws/src/rsi_lauv_ntnu/srv/testStationKeeping.srv" ""
 )
 
 get_filename_component(_filename "/home/uvlab/swarms/catkin_ws/src/rsi_lauv_ntnu/srv/testSrvRsiLauv.srv" NAME_WE)
@@ -40,6 +45,12 @@ _generate_msg_cpp(rsi_lauv_ntnu
 
 ### Generating Services
 _generate_srv_cpp(rsi_lauv_ntnu
+  "/home/uvlab/swarms/catkin_ws/src/rsi_lauv_ntnu/srv/testStationKeeping.srv"
+  "${MSG_I_FLAGS}"
+  ""
+  ${CATKIN_DEVEL_PREFIX}/${gencpp_INSTALL_DIR}/rsi_lauv_ntnu
+)
+_generate_srv_cpp(rsi_lauv_ntnu
   "/home/uvlab/swarms/catkin_ws/src/rsi_lauv_ntnu/srv/testSrvRsiLauv.srv"
   "${MSG_I_FLAGS}"
   ""
@@ -59,6 +70,8 @@ add_dependencies(rsi_lauv_ntnu_generate_messages rsi_lauv_ntnu_generate_messages
 
 # add dependencies to all check dependencies targets
 get_filename_component(_filename "/home/uvlab/swarms/catkin_ws/src/rsi_lauv_ntnu/msg/testMsgRsiLauv.msg" NAME_WE)
+add_dependencies(rsi_lauv_ntnu_generate_messages_cpp _rsi_lauv_ntnu_generate_messages_check_deps_${_filename})
+get_filename_component(_filename "/home/uvlab/swarms/catkin_ws/src/rsi_lauv_ntnu/srv/testStationKeeping.srv" NAME_WE)
 add_dependencies(rsi_lauv_ntnu_generate_messages_cpp _rsi_lauv_ntnu_generate_messages_check_deps_${_filename})
 get_filename_component(_filename "/home/uvlab/swarms/catkin_ws/src/rsi_lauv_ntnu/srv/testSrvRsiLauv.srv" NAME_WE)
 add_dependencies(rsi_lauv_ntnu_generate_messages_cpp _rsi_lauv_ntnu_generate_messages_check_deps_${_filename})
@@ -81,6 +94,12 @@ _generate_msg_lisp(rsi_lauv_ntnu
 
 ### Generating Services
 _generate_srv_lisp(rsi_lauv_ntnu
+  "/home/uvlab/swarms/catkin_ws/src/rsi_lauv_ntnu/srv/testStationKeeping.srv"
+  "${MSG_I_FLAGS}"
+  ""
+  ${CATKIN_DEVEL_PREFIX}/${genlisp_INSTALL_DIR}/rsi_lauv_ntnu
+)
+_generate_srv_lisp(rsi_lauv_ntnu
   "/home/uvlab/swarms/catkin_ws/src/rsi_lauv_ntnu/srv/testSrvRsiLauv.srv"
   "${MSG_I_FLAGS}"
   ""
@@ -100,6 +119,8 @@ add_dependencies(rsi_lauv_ntnu_generate_messages rsi_lauv_ntnu_generate_messages
 
 # add dependencies to all check dependencies targets
 get_filename_component(_filename "/home/uvlab/swarms/catkin_ws/src/rsi_lauv_ntnu/msg/testMsgRsiLauv.msg" NAME_WE)
+add_dependencies(rsi_lauv_ntnu_generate_messages_lisp _rsi_lauv_ntnu_generate_messages_check_deps_${_filename})
+get_filename_component(_filename "/home/uvlab/swarms/catkin_ws/src/rsi_lauv_ntnu/srv/testStationKeeping.srv" NAME_WE)
 add_dependencies(rsi_lauv_ntnu_generate_messages_lisp _rsi_lauv_ntnu_generate_messages_check_deps_${_filename})
 get_filename_component(_filename "/home/uvlab/swarms/catkin_ws/src/rsi_lauv_ntnu/srv/testSrvRsiLauv.srv" NAME_WE)
 add_dependencies(rsi_lauv_ntnu_generate_messages_lisp _rsi_lauv_ntnu_generate_messages_check_deps_${_filename})
@@ -122,6 +143,12 @@ _generate_msg_py(rsi_lauv_ntnu
 
 ### Generating Services
 _generate_srv_py(rsi_lauv_ntnu
+  "/home/uvlab/swarms/catkin_ws/src/rsi_lauv_ntnu/srv/testStationKeeping.srv"
+  "${MSG_I_FLAGS}"
+  ""
+  ${CATKIN_DEVEL_PREFIX}/${genpy_INSTALL_DIR}/rsi_lauv_ntnu
+)
+_generate_srv_py(rsi_lauv_ntnu
   "/home/uvlab/swarms/catkin_ws/src/rsi_lauv_ntnu/srv/testSrvRsiLauv.srv"
   "${MSG_I_FLAGS}"
   ""
@@ -141,6 +168,8 @@ add_dependencies(rsi_lauv_ntnu_generate_messages rsi_lauv_ntnu_generate_messages
 
 # add dependencies to all check dependencies targets
 get_filename_component(_filename "/home/uvlab/swarms/catkin_ws/src/rsi_lauv_ntnu/msg/testMsgRsiLauv.msg" NAME_WE)
+add_dependencies(rsi_lauv_ntnu_generate_messages_py _rsi_lauv_ntnu_generate_messages_check_deps_${_filename})
+get_filename_component(_filename "/home/uvlab/swarms/catkin_ws/src/rsi_lauv_ntnu/srv/testStationKeeping.srv" NAME_WE)
 add_dependencies(rsi_lauv_ntnu_generate_messages_py _rsi_lauv_ntnu_generate_messages_check_deps_${_filename})
 get_filename_component(_filename "/home/uvlab/swarms/catkin_ws/src/rsi_lauv_ntnu/srv/testSrvRsiLauv.srv" NAME_WE)
 add_dependencies(rsi_lauv_ntnu_generate_messages_py _rsi_lauv_ntnu_generate_messages_check_deps_${_filename})

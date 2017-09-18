@@ -1,6 +1,7 @@
 FILE(REMOVE_RECURSE
   "CMakeFiles/rsi_lauv_ntnu_generate_messages_lisp"
   "/home/uvlab/swarms/catkin_ws/devel/share/common-lisp/ros/rsi_lauv_ntnu/msg/testMsgRsiLauv.lisp"
+  "/home/uvlab/swarms/catkin_ws/devel/share/common-lisp/ros/rsi_lauv_ntnu/srv/testStationKeeping.lisp"
   "/home/uvlab/swarms/catkin_ws/devel/share/common-lisp/ros/rsi_lauv_ntnu/srv/testSrvRsiLauv.lisp"
 )
 

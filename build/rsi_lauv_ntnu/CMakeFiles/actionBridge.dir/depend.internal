@@ -301,8 +301,12 @@ rsi_lauv_ntnu/CMakeFiles/actionBridge.dir/src/actionBridge.cpp.o
  /home/uvlab/swarms/catkin_ws/devel/include/rsi_lauv_ntnu/testSrvRsiLauv.h
  /home/uvlab/swarms/catkin_ws/devel/include/rsi_lauv_ntnu/testSrvRsiLauvRequest.h
  /home/uvlab/swarms/catkin_ws/devel/include/rsi_lauv_ntnu/testSrvRsiLauvResponse.h
+ /home/uvlab/swarms/catkin_ws/devel/include/rsi_lauv_ntnu/testStationKeeping.h
+ /home/uvlab/swarms/catkin_ws/devel/include/rsi_lauv_ntnu/testStationKeepingRequest.h
+ /home/uvlab/swarms/catkin_ws/devel/include/rsi_lauv_ntnu/testStationKeepingResponse.h
  /home/uvlab/swarms/catkin_ws/src/rsi_lauv_ntnu/include/TcpLink.hpp
  /home/uvlab/swarms/catkin_ws/src/rsi_lauv_ntnu/include/actionBridge.hpp
+ /home/uvlab/swarms/catkin_ws/src/rsi_lauv_ntnu/include/actionUtil.hpp
  /home/uvlab/swarms/catkin_ws/src/rsi_lauv_ntnu/include/bridgeConnection.hpp
  /home/uvlab/swarms/catkin_ws/src/rsi_lauv_ntnu/include/imcIdDefs.h
  /home/uvlab/swarms/catkin_ws/src/rsi_lauv_ntnu/include/utilFctn.hpp

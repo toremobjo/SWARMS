@@ -7,6 +7,7 @@
 # new environment variables
 
 # modified environment variables
-export LD_LIBRARY_PATH="/home/uvlab/swarms/catkin_ws/devel/lib/x86_64-linux-gnu:/opt/ros/indigo/lib/x86_64-linux-gnu:/home/uvlab/swarms/catkin_ws/devel/lib:/home/uvlab/catkin_ws/devel/lib:/opt/ros/indigo/lib"
-export PKG_CONFIG_PATH="/home/uvlab/swarms/catkin_ws/devel/lib/x86_64-linux-gnu/pkgconfig:/opt/ros/indigo/lib/x86_64-linux-gnu/pkgconfig:/home/uvlab/swarms/catkin_ws/devel/lib/pkgconfig:/home/uvlab/catkin_ws/devel/lib/pkgconfig:/opt/ros/indigo/lib/pkgconfig:/usr/local/lib/pkgconfig"
+export LD_LIBRARY_PATH="/home/uvlab/swarms/catkin_ws/devel/lib:/opt/ros/indigo/lib"
+export PATH="/opt/ros/indigo/bin:/opt/OmniDriver/OOI_HOME:/opt/OmniDriver/OOI_HOME:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/usr/lib/jvm/java-8-oracle/bin:/usr/lib/jvm/java-8-oracle/db/bin:/usr/lib/jvm/java-8-oracle/jre/bin"
+export PKG_CONFIG_PATH="/home/uvlab/swarms/catkin_ws/devel/lib/pkgconfig:/opt/ros/indigo/lib/pkgconfig:/usr/local/lib/pkgconfig"
 export PWD="/home/uvlab/swarms/catkin_ws/build"

@@ -163,19 +163,6 @@ clean_test_results/fast:
 .PHONY : clean_test_results/fast
 
 #=============================================================================
-# Target rules for targets named clean_test_results_Project
-
-# Build rule for target.
-clean_test_results_Project: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 clean_test_results_Project
-.PHONY : clean_test_results_Project
-
-# fast build rule for target.
-clean_test_results_Project/fast:
-	$(MAKE) -f CMakeFiles/clean_test_results_Project.dir/build.make CMakeFiles/clean_test_results_Project.dir/build
-.PHONY : clean_test_results_Project/fast
-
-#=============================================================================
 # Target rules for targets named download_extra_data
 
 # Build rule for target.
@@ -1073,17 +1060,17 @@ _rsi_lauv_ntnu_generate_messages_check_deps_testSrvRsiLauv/fast:
 .PHONY : _rsi_lauv_ntnu_generate_messages_check_deps_testSrvRsiLauv/fast
 
 #=============================================================================
-# Target rules for targets named actionBridge
+# Target rules for targets named _rsi_lauv_ntnu_generate_messages_check_deps_testStationKeeping
 
 # Build rule for target.
-actionBridge: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 actionBridge
-.PHONY : actionBridge
+_rsi_lauv_ntnu_generate_messages_check_deps_testStationKeeping: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 _rsi_lauv_ntnu_generate_messages_check_deps_testStationKeeping
+.PHONY : _rsi_lauv_ntnu_generate_messages_check_deps_testStationKeeping
 
 # fast build rule for target.
-actionBridge/fast:
-	$(MAKE) -f rsi_lauv_ntnu/CMakeFiles/actionBridge.dir/build.make rsi_lauv_ntnu/CMakeFiles/actionBridge.dir/build
-.PHONY : actionBridge/fast
+_rsi_lauv_ntnu_generate_messages_check_deps_testStationKeeping/fast:
+	$(MAKE) -f rsi_lauv_ntnu/CMakeFiles/_rsi_lauv_ntnu_generate_messages_check_deps_testStationKeeping.dir/build.make rsi_lauv_ntnu/CMakeFiles/_rsi_lauv_ntnu_generate_messages_check_deps_testStationKeeping.dir/build
+.PHONY : _rsi_lauv_ntnu_generate_messages_check_deps_testStationKeeping/fast
 
 #=============================================================================
 # Target rules for targets named bridgeConnection
@@ -1222,7 +1209,6 @@ help:
 	@echo "... clean"
 	@echo "... depend"
 	@echo "... clean_test_results"
-	@echo "... clean_test_results_Project"
 	@echo "... download_extra_data"
 	@echo "... doxygen"
 	@echo "... edit_cache"
@@ -1299,7 +1285,7 @@ help:
 	@echo "... std_msgs_generate_messages_py"
 	@echo "... _rsi_lauv_ntnu_generate_messages_check_deps_testMsgRsiLauv"
 	@echo "... _rsi_lauv_ntnu_generate_messages_check_deps_testSrvRsiLauv"
-	@echo "... actionBridge"
+	@echo "... _rsi_lauv_ntnu_generate_messages_check_deps_testStationKeeping"
 	@echo "... bridgeConnection"
 	@echo "... rsi_lauv_ntnu_gencpp"
 	@echo "... rsi_lauv_ntnu_generate_messages"

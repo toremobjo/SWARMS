@@ -178,18 +178,18 @@ _rsi_lauv_ntnu_generate_messages_check_deps_testSrvRsiLauv/fast:
 .PHONY : _rsi_lauv_ntnu_generate_messages_check_deps_testSrvRsiLauv/fast
 
 # Convenience name for target.
-rsi_lauv_ntnu/CMakeFiles/actionBridge.dir/rule:
-	cd /home/uvlab/swarms/catkin_ws/build && $(MAKE) -f CMakeFiles/Makefile2 rsi_lauv_ntnu/CMakeFiles/actionBridge.dir/rule
-.PHONY : rsi_lauv_ntnu/CMakeFiles/actionBridge.dir/rule
+rsi_lauv_ntnu/CMakeFiles/_rsi_lauv_ntnu_generate_messages_check_deps_testStationKeeping.dir/rule:
+	cd /home/uvlab/swarms/catkin_ws/build && $(MAKE) -f CMakeFiles/Makefile2 rsi_lauv_ntnu/CMakeFiles/_rsi_lauv_ntnu_generate_messages_check_deps_testStationKeeping.dir/rule
+.PHONY : rsi_lauv_ntnu/CMakeFiles/_rsi_lauv_ntnu_generate_messages_check_deps_testStationKeeping.dir/rule
 
 # Convenience name for target.
-actionBridge: rsi_lauv_ntnu/CMakeFiles/actionBridge.dir/rule
-.PHONY : actionBridge
+_rsi_lauv_ntnu_generate_messages_check_deps_testStationKeeping: rsi_lauv_ntnu/CMakeFiles/_rsi_lauv_ntnu_generate_messages_check_deps_testStationKeeping.dir/rule
+.PHONY : _rsi_lauv_ntnu_generate_messages_check_deps_testStationKeeping
 
 # fast build rule for target.
-actionBridge/fast:
-	cd /home/uvlab/swarms/catkin_ws/build && $(MAKE) -f rsi_lauv_ntnu/CMakeFiles/actionBridge.dir/build.make rsi_lauv_ntnu/CMakeFiles/actionBridge.dir/build
-.PHONY : actionBridge/fast
+_rsi_lauv_ntnu_generate_messages_check_deps_testStationKeeping/fast:
+	cd /home/uvlab/swarms/catkin_ws/build && $(MAKE) -f rsi_lauv_ntnu/CMakeFiles/_rsi_lauv_ntnu_generate_messages_check_deps_testStationKeeping.dir/build.make rsi_lauv_ntnu/CMakeFiles/_rsi_lauv_ntnu_generate_messages_check_deps_testStationKeeping.dir/build
+.PHONY : _rsi_lauv_ntnu_generate_messages_check_deps_testStationKeeping/fast
 
 # Convenience name for target.
 rsi_lauv_ntnu/CMakeFiles/bridgeConnection.dir/rule:
@@ -331,30 +331,6 @@ zeroLauvNode/fast:
 	cd /home/uvlab/swarms/catkin_ws/build && $(MAKE) -f rsi_lauv_ntnu/CMakeFiles/zeroLauvNode.dir/build.make rsi_lauv_ntnu/CMakeFiles/zeroLauvNode.dir/build
 .PHONY : zeroLauvNode/fast
 
-src/actionBridge.o: src/actionBridge.cpp.o
-.PHONY : src/actionBridge.o
-
-# target to build an object file
-src/actionBridge.cpp.o:
-	cd /home/uvlab/swarms/catkin_ws/build && $(MAKE) -f rsi_lauv_ntnu/CMakeFiles/actionBridge.dir/build.make rsi_lauv_ntnu/CMakeFiles/actionBridge.dir/src/actionBridge.cpp.o
-.PHONY : src/actionBridge.cpp.o
-
-src/actionBridge.i: src/actionBridge.cpp.i
-.PHONY : src/actionBridge.i
-
-# target to preprocess a source file
-src/actionBridge.cpp.i:
-	cd /home/uvlab/swarms/catkin_ws/build && $(MAKE) -f rsi_lauv_ntnu/CMakeFiles/actionBridge.dir/build.make rsi_lauv_ntnu/CMakeFiles/actionBridge.dir/src/actionBridge.cpp.i
-.PHONY : src/actionBridge.cpp.i
-
-src/actionBridge.s: src/actionBridge.cpp.s
-.PHONY : src/actionBridge.s
-
-# target to generate assembly for a file
-src/actionBridge.cpp.s:
-	cd /home/uvlab/swarms/catkin_ws/build && $(MAKE) -f rsi_lauv_ntnu/CMakeFiles/actionBridge.dir/build.make rsi_lauv_ntnu/CMakeFiles/actionBridge.dir/src/actionBridge.cpp.s
-.PHONY : src/actionBridge.cpp.s
-
 src/bridgeConnection.o: src/bridgeConnection.cpp.o
 .PHONY : src/bridgeConnection.o
 
@@ -435,7 +411,7 @@ help:
 	@echo "... depend"
 	@echo "... _rsi_lauv_ntnu_generate_messages_check_deps_testMsgRsiLauv"
 	@echo "... _rsi_lauv_ntnu_generate_messages_check_deps_testSrvRsiLauv"
-	@echo "... actionBridge"
+	@echo "... _rsi_lauv_ntnu_generate_messages_check_deps_testStationKeeping"
 	@echo "... bridgeConnection"
 	@echo "... edit_cache"
 	@echo "... install"
@@ -453,9 +429,6 @@ help:
 	@echo "... test"
 	@echo "... verboseLauvNode"
 	@echo "... zeroLauvNode"
-	@echo "... src/actionBridge.o"
-	@echo "... src/actionBridge.i"
-	@echo "... src/actionBridge.s"
 	@echo "... src/bridgeConnection.o"
 	@echo "... src/bridgeConnection.i"
 	@echo "... src/bridgeConnection.s"
