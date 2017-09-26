@@ -297,6 +297,9 @@ rsi_lauv_ntnu/CMakeFiles/bridgeConnection.dir/src/bridgeConnection.cpp.o
  /home/uvlab/swarms/catkin_ws/devel/include/g2s_interface/runGOTO_WAYPOINTRequest.h
  /home/uvlab/swarms/catkin_ws/devel/include/g2s_interface/runGOTO_WAYPOINTResponse.h
  /home/uvlab/swarms/catkin_ws/devel/include/g2s_interface/waterData.h
+ /home/uvlab/swarms/catkin_ws/devel/include/rsi_lauv_ntnu/runGotoSimple.h
+ /home/uvlab/swarms/catkin_ws/devel/include/rsi_lauv_ntnu/runGotoSimpleRequest.h
+ /home/uvlab/swarms/catkin_ws/devel/include/rsi_lauv_ntnu/runGotoSimpleResponse.h
  /home/uvlab/swarms/catkin_ws/devel/include/rsi_lauv_ntnu/testMsgRsiLauv.h
  /home/uvlab/swarms/catkin_ws/devel/include/rsi_lauv_ntnu/testSrvRsiLauv.h
  /home/uvlab/swarms/catkin_ws/devel/include/rsi_lauv_ntnu/testSrvRsiLauvRequest.h

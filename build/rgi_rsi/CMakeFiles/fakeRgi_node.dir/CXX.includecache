@@ -106,24 +106,6 @@ ros/builtin_message_traits.h
 ros/message_operations.h
 -
 
-/home/uvlab/swarms/catkin_ws/devel/include/rsi_lauv_ntnu/testMsgRsiLauv.h
-string
--
-vector
--
-map
--
-ros/types.h
--
-ros/serialization.h
--
-ros/builtin_message_traits.h
--
-ros/message_operations.h
--
-std_msgs/Header.h
--
-
 /home/uvlab/swarms/catkin_ws/src/rgi_rsi/include/actionDefs.h
 
 /home/uvlab/swarms/catkin_ws/src/rgi_rsi/src/fakeRgi.cpp
@@ -137,8 +119,6 @@ g2s_interface/runGOTO_WAYPOINT.h
 /home/uvlab/swarms/catkin_ws/src/rgi_rsi/src/g2s_interface/runGOTO_WAYPOINT.h
 std_msgs/Int32.h
 -
-rsi_lauv_ntnu/testMsgRsiLauv.h
-/home/uvlab/swarms/catkin_ws/src/rgi_rsi/src/rsi_lauv_ntnu/testMsgRsiLauv.h
 actionDefs.h
 -
 geometry_msgs/Pose.h
@@ -839,22 +819,6 @@ ros/forwards.h
 /opt/ros/indigo/include/ros/ros/forwards.h
 
 /opt/ros/indigo/include/rosconsole/macros_generated.h
-
-/opt/ros/indigo/include/std_msgs/Header.h
-string
--
-vector
--
-map
--
-ros/types.h
--
-ros/serialization.h
--
-ros/builtin_message_traits.h
--
-ros/message_operations.h
--
 
 /opt/ros/indigo/include/std_msgs/Int32.h
 string

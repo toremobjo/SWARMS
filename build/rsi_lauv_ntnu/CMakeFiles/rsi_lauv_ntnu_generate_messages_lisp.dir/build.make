@@ -46,6 +46,7 @@ CMAKE_BINARY_DIR = /home/uvlab/swarms/catkin_ws/build
 include rsi_lauv_ntnu/CMakeFiles/rsi_lauv_ntnu_generate_messages_lisp.dir/progress.make
 
 rsi_lauv_ntnu/CMakeFiles/rsi_lauv_ntnu_generate_messages_lisp: /home/uvlab/swarms/catkin_ws/devel/share/common-lisp/ros/rsi_lauv_ntnu/msg/testMsgRsiLauv.lisp
+rsi_lauv_ntnu/CMakeFiles/rsi_lauv_ntnu_generate_messages_lisp: /home/uvlab/swarms/catkin_ws/devel/share/common-lisp/ros/rsi_lauv_ntnu/srv/runGotoSimple.lisp
 rsi_lauv_ntnu/CMakeFiles/rsi_lauv_ntnu_generate_messages_lisp: /home/uvlab/swarms/catkin_ws/devel/share/common-lisp/ros/rsi_lauv_ntnu/srv/testStationKeeping.lisp
 rsi_lauv_ntnu/CMakeFiles/rsi_lauv_ntnu_generate_messages_lisp: /home/uvlab/swarms/catkin_ws/devel/share/common-lisp/ros/rsi_lauv_ntnu/srv/testSrvRsiLauv.lisp
 
@@ -56,20 +57,28 @@ rsi_lauv_ntnu/CMakeFiles/rsi_lauv_ntnu_generate_messages_lisp: /home/uvlab/swarm
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold "Generating Lisp code from rsi_lauv_ntnu/testMsgRsiLauv.msg"
 	cd /home/uvlab/swarms/catkin_ws/build/rsi_lauv_ntnu && ../catkin_generated/env_cached.sh /usr/bin/python /opt/ros/indigo/share/genlisp/cmake/../../../lib/genlisp/gen_lisp.py /home/uvlab/swarms/catkin_ws/src/rsi_lauv_ntnu/msg/testMsgRsiLauv.msg -Irsi_lauv_ntnu:/home/uvlab/swarms/catkin_ws/src/rsi_lauv_ntnu/msg -Istd_msgs:/opt/ros/indigo/share/std_msgs/cmake/../msg -Igeometry_msgs:/opt/ros/indigo/share/geometry_msgs/cmake/../msg -p rsi_lauv_ntnu -o /home/uvlab/swarms/catkin_ws/devel/share/common-lisp/ros/rsi_lauv_ntnu/msg
 
+/home/uvlab/swarms/catkin_ws/devel/share/common-lisp/ros/rsi_lauv_ntnu/srv/runGotoSimple.lisp: /opt/ros/indigo/share/genlisp/cmake/../../../lib/genlisp/gen_lisp.py
+/home/uvlab/swarms/catkin_ws/devel/share/common-lisp/ros/rsi_lauv_ntnu/srv/runGotoSimple.lisp: /home/uvlab/swarms/catkin_ws/src/rsi_lauv_ntnu/srv/runGotoSimple.srv
+/home/uvlab/swarms/catkin_ws/devel/share/common-lisp/ros/rsi_lauv_ntnu/srv/runGotoSimple.lisp: /opt/ros/indigo/share/geometry_msgs/cmake/../msg/Point.msg
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/uvlab/swarms/catkin_ws/build/CMakeFiles $(CMAKE_PROGRESS_2)
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold "Generating Lisp code from rsi_lauv_ntnu/runGotoSimple.srv"
+	cd /home/uvlab/swarms/catkin_ws/build/rsi_lauv_ntnu && ../catkin_generated/env_cached.sh /usr/bin/python /opt/ros/indigo/share/genlisp/cmake/../../../lib/genlisp/gen_lisp.py /home/uvlab/swarms/catkin_ws/src/rsi_lauv_ntnu/srv/runGotoSimple.srv -Irsi_lauv_ntnu:/home/uvlab/swarms/catkin_ws/src/rsi_lauv_ntnu/msg -Istd_msgs:/opt/ros/indigo/share/std_msgs/cmake/../msg -Igeometry_msgs:/opt/ros/indigo/share/geometry_msgs/cmake/../msg -p rsi_lauv_ntnu -o /home/uvlab/swarms/catkin_ws/devel/share/common-lisp/ros/rsi_lauv_ntnu/srv
+
 /home/uvlab/swarms/catkin_ws/devel/share/common-lisp/ros/rsi_lauv_ntnu/srv/testStationKeeping.lisp: /opt/ros/indigo/share/genlisp/cmake/../../../lib/genlisp/gen_lisp.py
 /home/uvlab/swarms/catkin_ws/devel/share/common-lisp/ros/rsi_lauv_ntnu/srv/testStationKeeping.lisp: /home/uvlab/swarms/catkin_ws/src/rsi_lauv_ntnu/srv/testStationKeeping.srv
-	$(CMAKE_COMMAND) -E cmake_progress_report /home/uvlab/swarms/catkin_ws/build/CMakeFiles $(CMAKE_PROGRESS_2)
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/uvlab/swarms/catkin_ws/build/CMakeFiles $(CMAKE_PROGRESS_3)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold "Generating Lisp code from rsi_lauv_ntnu/testStationKeeping.srv"
 	cd /home/uvlab/swarms/catkin_ws/build/rsi_lauv_ntnu && ../catkin_generated/env_cached.sh /usr/bin/python /opt/ros/indigo/share/genlisp/cmake/../../../lib/genlisp/gen_lisp.py /home/uvlab/swarms/catkin_ws/src/rsi_lauv_ntnu/srv/testStationKeeping.srv -Irsi_lauv_ntnu:/home/uvlab/swarms/catkin_ws/src/rsi_lauv_ntnu/msg -Istd_msgs:/opt/ros/indigo/share/std_msgs/cmake/../msg -Igeometry_msgs:/opt/ros/indigo/share/geometry_msgs/cmake/../msg -p rsi_lauv_ntnu -o /home/uvlab/swarms/catkin_ws/devel/share/common-lisp/ros/rsi_lauv_ntnu/srv
 
 /home/uvlab/swarms/catkin_ws/devel/share/common-lisp/ros/rsi_lauv_ntnu/srv/testSrvRsiLauv.lisp: /opt/ros/indigo/share/genlisp/cmake/../../../lib/genlisp/gen_lisp.py
 /home/uvlab/swarms/catkin_ws/devel/share/common-lisp/ros/rsi_lauv_ntnu/srv/testSrvRsiLauv.lisp: /home/uvlab/swarms/catkin_ws/src/rsi_lauv_ntnu/srv/testSrvRsiLauv.srv
-	$(CMAKE_COMMAND) -E cmake_progress_report /home/uvlab/swarms/catkin_ws/build/CMakeFiles $(CMAKE_PROGRESS_3)
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/uvlab/swarms/catkin_ws/build/CMakeFiles $(CMAKE_PROGRESS_4)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold "Generating Lisp code from rsi_lauv_ntnu/testSrvRsiLauv.srv"
 	cd /home/uvlab/swarms/catkin_ws/build/rsi_lauv_ntnu && ../catkin_generated/env_cached.sh /usr/bin/python /opt/ros/indigo/share/genlisp/cmake/../../../lib/genlisp/gen_lisp.py /home/uvlab/swarms/catkin_ws/src/rsi_lauv_ntnu/srv/testSrvRsiLauv.srv -Irsi_lauv_ntnu:/home/uvlab/swarms/catkin_ws/src/rsi_lauv_ntnu/msg -Istd_msgs:/opt/ros/indigo/share/std_msgs/cmake/../msg -Igeometry_msgs:/opt/ros/indigo/share/geometry_msgs/cmake/../msg -p rsi_lauv_ntnu -o /home/uvlab/swarms/catkin_ws/devel/share/common-lisp/ros/rsi_lauv_ntnu/srv
 
 rsi_lauv_ntnu_generate_messages_lisp: rsi_lauv_ntnu/CMakeFiles/rsi_lauv_ntnu_generate_messages_lisp
 rsi_lauv_ntnu_generate_messages_lisp: /home/uvlab/swarms/catkin_ws/devel/share/common-lisp/ros/rsi_lauv_ntnu/msg/testMsgRsiLauv.lisp
+rsi_lauv_ntnu_generate_messages_lisp: /home/uvlab/swarms/catkin_ws/devel/share/common-lisp/ros/rsi_lauv_ntnu/srv/runGotoSimple.lisp
 rsi_lauv_ntnu_generate_messages_lisp: /home/uvlab/swarms/catkin_ws/devel/share/common-lisp/ros/rsi_lauv_ntnu/srv/testStationKeeping.lisp
 rsi_lauv_ntnu_generate_messages_lisp: /home/uvlab/swarms/catkin_ws/devel/share/common-lisp/ros/rsi_lauv_ntnu/srv/testSrvRsiLauv.lisp
 rsi_lauv_ntnu_generate_messages_lisp: rsi_lauv_ntnu/CMakeFiles/rsi_lauv_ntnu_generate_messages_lisp.dir/build.make

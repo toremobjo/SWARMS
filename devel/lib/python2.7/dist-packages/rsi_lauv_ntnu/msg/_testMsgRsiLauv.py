@@ -17,7 +17,6 @@ string txt2
 float64 val1
 float64 val2
 
-
 ================================================================================
 MSG: std_msgs/Header
 # Standard metadata for higher-level stamped data types.

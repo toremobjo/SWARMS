@@ -296,6 +296,9 @@ rsi_lauv_ntnu/CMakeFiles/bridgeConnection.dir/src/bridgeConnection.cpp.o: /home/
 rsi_lauv_ntnu/CMakeFiles/bridgeConnection.dir/src/bridgeConnection.cpp.o: /home/uvlab/swarms/catkin_ws/devel/include/g2s_interface/runGOTO_WAYPOINTRequest.h
 rsi_lauv_ntnu/CMakeFiles/bridgeConnection.dir/src/bridgeConnection.cpp.o: /home/uvlab/swarms/catkin_ws/devel/include/g2s_interface/runGOTO_WAYPOINTResponse.h
 rsi_lauv_ntnu/CMakeFiles/bridgeConnection.dir/src/bridgeConnection.cpp.o: /home/uvlab/swarms/catkin_ws/devel/include/g2s_interface/waterData.h
+rsi_lauv_ntnu/CMakeFiles/bridgeConnection.dir/src/bridgeConnection.cpp.o: /home/uvlab/swarms/catkin_ws/devel/include/rsi_lauv_ntnu/runGotoSimple.h
+rsi_lauv_ntnu/CMakeFiles/bridgeConnection.dir/src/bridgeConnection.cpp.o: /home/uvlab/swarms/catkin_ws/devel/include/rsi_lauv_ntnu/runGotoSimpleRequest.h
+rsi_lauv_ntnu/CMakeFiles/bridgeConnection.dir/src/bridgeConnection.cpp.o: /home/uvlab/swarms/catkin_ws/devel/include/rsi_lauv_ntnu/runGotoSimpleResponse.h
 rsi_lauv_ntnu/CMakeFiles/bridgeConnection.dir/src/bridgeConnection.cpp.o: /home/uvlab/swarms/catkin_ws/devel/include/rsi_lauv_ntnu/testMsgRsiLauv.h
 rsi_lauv_ntnu/CMakeFiles/bridgeConnection.dir/src/bridgeConnection.cpp.o: /home/uvlab/swarms/catkin_ws/devel/include/rsi_lauv_ntnu/testSrvRsiLauv.h
 rsi_lauv_ntnu/CMakeFiles/bridgeConnection.dir/src/bridgeConnection.cpp.o: /home/uvlab/swarms/catkin_ws/devel/include/rsi_lauv_ntnu/testSrvRsiLauvRequest.h

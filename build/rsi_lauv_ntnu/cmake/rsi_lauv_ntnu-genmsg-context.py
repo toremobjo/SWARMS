@@ -1,7 +1,7 @@
 # generated from genmsg/cmake/pkg-genmsg.context.in
 
 messages_str = "/home/uvlab/swarms/catkin_ws/src/rsi_lauv_ntnu/msg/testMsgRsiLauv.msg"
-services_str = "/home/uvlab/swarms/catkin_ws/src/rsi_lauv_ntnu/srv/testSrvRsiLauv.srv;/home/uvlab/swarms/catkin_ws/src/rsi_lauv_ntnu/srv/testStationKeeping.srv"
+services_str = "/home/uvlab/swarms/catkin_ws/src/rsi_lauv_ntnu/srv/testSrvRsiLauv.srv;/home/uvlab/swarms/catkin_ws/src/rsi_lauv_ntnu/srv/testStationKeeping.srv;/home/uvlab/swarms/catkin_ws/src/rsi_lauv_ntnu/srv/runGotoSimple.srv"
 pkg_name = "rsi_lauv_ntnu"
 dependencies_str = "std_msgs;geometry_msgs"
 langs = "gencpp;genlisp;genpy"

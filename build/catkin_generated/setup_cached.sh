@@ -7,7 +7,11 @@
 # new environment variables
 
 # modified environment variables
-export LD_LIBRARY_PATH="/home/uvlab/swarms/catkin_ws/devel/lib:/opt/ros/indigo/lib"
-export PATH="/opt/ros/indigo/bin:/opt/OmniDriver/OOI_HOME:/opt/OmniDriver/OOI_HOME:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/usr/lib/jvm/java-8-oracle/bin:/usr/lib/jvm/java-8-oracle/db/bin:/usr/lib/jvm/java-8-oracle/jre/bin"
-export PKG_CONFIG_PATH="/home/uvlab/swarms/catkin_ws/devel/lib/pkgconfig:/opt/ros/indigo/lib/pkgconfig:/usr/local/lib/pkgconfig"
+export CMAKE_PREFIX_PATH="/home/uvlab/swarms/catkin_ws/devel:$CMAKE_PREFIX_PATH"
+export CPATH="/home/uvlab/swarms/catkin_ws/devel/include:$CPATH"
+export LD_LIBRARY_PATH="/home/uvlab/swarms/catkin_ws/devel/lib:$LD_LIBRARY_PATH"
+export PKG_CONFIG_PATH="/home/uvlab/swarms/catkin_ws/devel/lib/pkgconfig:$PKG_CONFIG_PATH"
 export PWD="/home/uvlab/swarms/catkin_ws/build"
+export PYTHONPATH="/home/uvlab/swarms/catkin_ws/devel/lib/python2.7/dist-packages:$PYTHONPATH"
+export ROSLISP_PACKAGE_DIRECTORIES="/home/uvlab/swarms/catkin_ws/devel/share/common-lisp"
+export ROS_PACKAGE_PATH="/home/uvlab/swarms/catkin_ws/src:$ROS_PACKAGE_PATH"

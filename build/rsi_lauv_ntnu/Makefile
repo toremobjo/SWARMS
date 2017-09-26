@@ -150,6 +150,20 @@ depend:
 .PHONY : depend
 
 # Convenience name for target.
+rsi_lauv_ntnu/CMakeFiles/_rsi_lauv_ntnu_generate_messages_check_deps_runGotoSimple.dir/rule:
+	cd /home/uvlab/swarms/catkin_ws/build && $(MAKE) -f CMakeFiles/Makefile2 rsi_lauv_ntnu/CMakeFiles/_rsi_lauv_ntnu_generate_messages_check_deps_runGotoSimple.dir/rule
+.PHONY : rsi_lauv_ntnu/CMakeFiles/_rsi_lauv_ntnu_generate_messages_check_deps_runGotoSimple.dir/rule
+
+# Convenience name for target.
+_rsi_lauv_ntnu_generate_messages_check_deps_runGotoSimple: rsi_lauv_ntnu/CMakeFiles/_rsi_lauv_ntnu_generate_messages_check_deps_runGotoSimple.dir/rule
+.PHONY : _rsi_lauv_ntnu_generate_messages_check_deps_runGotoSimple
+
+# fast build rule for target.
+_rsi_lauv_ntnu_generate_messages_check_deps_runGotoSimple/fast:
+	cd /home/uvlab/swarms/catkin_ws/build && $(MAKE) -f rsi_lauv_ntnu/CMakeFiles/_rsi_lauv_ntnu_generate_messages_check_deps_runGotoSimple.dir/build.make rsi_lauv_ntnu/CMakeFiles/_rsi_lauv_ntnu_generate_messages_check_deps_runGotoSimple.dir/build
+.PHONY : _rsi_lauv_ntnu_generate_messages_check_deps_runGotoSimple/fast
+
+# Convenience name for target.
 rsi_lauv_ntnu/CMakeFiles/_rsi_lauv_ntnu_generate_messages_check_deps_testMsgRsiLauv.dir/rule:
 	cd /home/uvlab/swarms/catkin_ws/build && $(MAKE) -f CMakeFiles/Makefile2 rsi_lauv_ntnu/CMakeFiles/_rsi_lauv_ntnu_generate_messages_check_deps_testMsgRsiLauv.dir/rule
 .PHONY : rsi_lauv_ntnu/CMakeFiles/_rsi_lauv_ntnu_generate_messages_check_deps_testMsgRsiLauv.dir/rule
@@ -409,6 +423,7 @@ help:
 	@echo "... all (the default if no target is provided)"
 	@echo "... clean"
 	@echo "... depend"
+	@echo "... _rsi_lauv_ntnu_generate_messages_check_deps_runGotoSimple"
 	@echo "... _rsi_lauv_ntnu_generate_messages_check_deps_testMsgRsiLauv"
 	@echo "... _rsi_lauv_ntnu_generate_messages_check_deps_testSrvRsiLauv"
 	@echo "... _rsi_lauv_ntnu_generate_messages_check_deps_testStationKeeping"

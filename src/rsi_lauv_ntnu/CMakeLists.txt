@@ -63,6 +63,7 @@ add_service_files(
   FILES
   testSrvRsiLauv.srv
   testStationKeeping.srv
+  runGotoSimple.srv
 )
 
 ## Generate actions in the 'action' folder
