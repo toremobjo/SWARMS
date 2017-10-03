@@ -40,7 +40,7 @@ template<>
 struct MD5Sum< ::rsi_lauv_ntnu::runGotoSimple > {
   static const char* value()
   {
-    return "f6223c7abdc4b623d217c01366131467";
+    return "25b78143a6b69971297783f01406fddb";
   }
 
   static const char* value(const ::rsi_lauv_ntnu::runGotoSimple&) { return value(); }

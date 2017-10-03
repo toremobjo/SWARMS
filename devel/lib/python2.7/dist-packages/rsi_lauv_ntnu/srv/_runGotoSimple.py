@@ -122,15 +122,15 @@ import struct
 
 
 class runGotoSimpleResponse(genpy.Message):
-  _md5sum = "358e233cde0c8a8bcfea4ce193f8fc15"
+  _md5sum = "73bd3bd3d5404aebdb94bc00ab96690f"
   _type = "rsi_lauv_ntnu/runGotoSimpleResponse"
   _has_header = False #flag to mark the presence of a Header object
-  _full_text = """bool success
+  _full_text = """int32 actionId
 
 
 """
-  __slots__ = ['success']
-  _slot_types = ['bool']
+  __slots__ = ['actionId']
+  _slot_types = ['int32']
 
   def __init__(self, *args, **kwds):
     """
@@ -140,7 +140,7 @@ class runGotoSimpleResponse(genpy.Message):
     changes.  You cannot mix in-order arguments and keyword arguments.
 
     The available fields are:
-       success
+       actionId
 
     :param args: complete set of field values, in .msg order
     :param kwds: use keyword arguments corresponding to message field names
@@ -149,10 +149,10 @@ class runGotoSimpleResponse(genpy.Message):
     if args or kwds:
       super(runGotoSimpleResponse, self).__init__(*args, **kwds)
       #message fields cannot be None, assign default values for those that are
-      if self.success is None:
-        self.success = False
+      if self.actionId is None:
+        self.actionId = 0
     else:
-      self.success = False
+      self.actionId = 0
 
   def _get_types(self):
     """
@@ -166,7 +166,7 @@ class runGotoSimpleResponse(genpy.Message):
     :param buff: buffer, ``StringIO``
     """
     try:
-      buff.write(_struct_B.pack(self.success))
+      buff.write(_struct_i.pack(self.actionId))
     except struct.error as se: self._check_types(struct.error("%s: '%s' when writing '%s'" % (type(se), str(se), str(_x))))
     except TypeError as te: self._check_types(ValueError("%s: '%s' when writing '%s'" % (type(te), str(te), str(_x))))
 
@@ -178,9 +178,8 @@ class runGotoSimpleResponse(genpy.Message):
     try:
       end = 0
       start = end
-      end += 1
-      (self.success,) = _struct_B.unpack(str[start:end])
-      self.success = bool(self.success)
+      end += 4
+      (self.actionId,) = _struct_i.unpack(str[start:end])
       return self
     except struct.error as e:
       raise genpy.DeserializationError(e) #most likely buffer underfill
@@ -193,7 +192,7 @@ class runGotoSimpleResponse(genpy.Message):
     :param numpy: numpy python module
     """
     try:
-      buff.write(_struct_B.pack(self.success))
+      buff.write(_struct_i.pack(self.actionId))
     except struct.error as se: self._check_types(struct.error("%s: '%s' when writing '%s'" % (type(se), str(se), str(_x))))
     except TypeError as te: self._check_types(ValueError("%s: '%s' when writing '%s'" % (type(te), str(te), str(_x))))
 
@@ -206,17 +205,16 @@ class runGotoSimpleResponse(genpy.Message):
     try:
       end = 0
       start = end
-      end += 1
-      (self.success,) = _struct_B.unpack(str[start:end])
-      self.success = bool(self.success)
+      end += 4
+      (self.actionId,) = _struct_i.unpack(str[start:end])
       return self
     except struct.error as e:
       raise genpy.DeserializationError(e) #most likely buffer underfill
 
 _struct_I = genpy.struct_I
-_struct_B = struct.Struct("<B")
+_struct_i = struct.Struct("<i")
 class runGotoSimple(object):
   _type          = 'rsi_lauv_ntnu/runGotoSimple'
-  _md5sum = 'f6223c7abdc4b623d217c01366131467'
+  _md5sum = '25b78143a6b69971297783f01406fddb'
   _request_class  = runGotoSimpleRequest
   _response_class = runGotoSimpleResponse

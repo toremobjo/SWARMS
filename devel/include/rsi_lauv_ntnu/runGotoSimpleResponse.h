@@ -24,16 +24,16 @@ struct runGotoSimpleResponse_
   typedef runGotoSimpleResponse_<ContainerAllocator> Type;
 
   runGotoSimpleResponse_()
-    : success(false)  {
+    : actionId(0)  {
     }
   runGotoSimpleResponse_(const ContainerAllocator& _alloc)
-    : success(false)  {
+    : actionId(0)  {
     }
 
 
 
-   typedef uint8_t _success_type;
-  _success_type success;
+   typedef int32_t _actionId_type;
+  _actionId_type actionId;
 
 
 
@@ -112,12 +112,12 @@ struct MD5Sum< ::rsi_lauv_ntnu::runGotoSimpleResponse_<ContainerAllocator> >
 {
   static const char* value()
   {
-    return "358e233cde0c8a8bcfea4ce193f8fc15";
+    return "73bd3bd3d5404aebdb94bc00ab96690f";
   }
 
   static const char* value(const ::rsi_lauv_ntnu::runGotoSimpleResponse_<ContainerAllocator>&) { return value(); }
-  static const uint64_t static_value1 = 0x358e233cde0c8a8bULL;
-  static const uint64_t static_value2 = 0xcfea4ce193f8fc15ULL;
+  static const uint64_t static_value1 = 0x73bd3bd3d5404aebULL;
+  static const uint64_t static_value2 = 0xdb94bc00ab96690fULL;
 };
 
 template<class ContainerAllocator>
@@ -136,7 +136,7 @@ struct Definition< ::rsi_lauv_ntnu::runGotoSimpleResponse_<ContainerAllocator> >
 {
   static const char* value()
   {
-    return "bool success\n\
+    return "int32 actionId\n\
 \n\
 ";
   }
@@ -156,7 +156,7 @@ namespace serialization
   {
     template<typename Stream, typename T> inline static void allInOne(Stream& stream, T m)
     {
-      stream.next(m.success);
+      stream.next(m.actionId);
     }
 
     ROS_DECLARE_ALLINONE_SERIALIZER;
@@ -175,8 +175,8 @@ struct Printer< ::rsi_lauv_ntnu::runGotoSimpleResponse_<ContainerAllocator> >
 {
   template<typename Stream> static void stream(Stream& s, const std::string& indent, const ::rsi_lauv_ntnu::runGotoSimpleResponse_<ContainerAllocator>& v)
   {
-    s << indent << "success: ";
-    Printer<uint8_t>::stream(s, indent + "  ", v.success);
+    s << indent << "actionId: ";
+    Printer<int32_t>::stream(s, indent + "  ", v.actionId);
   }
 };
 

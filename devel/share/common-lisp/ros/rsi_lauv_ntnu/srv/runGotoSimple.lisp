@@ -43,10 +43,10 @@
   "rsi_lauv_ntnu/runGotoSimpleRequest")
 (cl:defmethod roslisp-msg-protocol:md5sum ((type (cl:eql '<runGotoSimple-request>)))
   "Returns md5sum for a message object of type '<runGotoSimple-request>"
-  "f6223c7abdc4b623d217c01366131467")
+  "25b78143a6b69971297783f01406fddb")
 (cl:defmethod roslisp-msg-protocol:md5sum ((type (cl:eql 'runGotoSimple-request)))
   "Returns md5sum for a message object of type 'runGotoSimple-request"
-  "f6223c7abdc4b623d217c01366131467")
+  "25b78143a6b69971297783f01406fddb")
 (cl:defmethod roslisp-msg-protocol:message-definition ((type (cl:eql '<runGotoSimple-request>)))
   "Returns full string definition for message of type '<runGotoSimple-request>"
   (cl:format cl:nil "geometry_msgs/Point pos~%~%================================================================================~%MSG: geometry_msgs/Point~%# This contains the position of a point in free space~%float64 x~%float64 y~%float64 z~%~%~%"))
@@ -65,11 +65,11 @@
 ;//! \htmlinclude runGotoSimple-response.msg.html
 
 (cl:defclass <runGotoSimple-response> (roslisp-msg-protocol:ros-message)
-  ((success
-    :reader success
-    :initarg :success
-    :type cl:boolean
-    :initform cl:nil))
+  ((actionId
+    :reader actionId
+    :initarg :actionId
+    :type cl:integer
+    :initform 0))
 )
 
 (cl:defclass runGotoSimple-response (<runGotoSimple-response>)
@@ -80,17 +80,27 @@
   (cl:unless (cl:typep m 'runGotoSimple-response)
     (roslisp-msg-protocol:msg-deprecation-warning "using old message class name rsi_lauv_ntnu-srv:<runGotoSimple-response> is deprecated: use rsi_lauv_ntnu-srv:runGotoSimple-response instead.")))
 
-(cl:ensure-generic-function 'success-val :lambda-list '(m))
-(cl:defmethod success-val ((m <runGotoSimple-response>))
-  (roslisp-msg-protocol:msg-deprecation-warning "Using old-style slot reader rsi_lauv_ntnu-srv:success-val is deprecated.  Use rsi_lauv_ntnu-srv:success instead.")
-  (success m))
+(cl:ensure-generic-function 'actionId-val :lambda-list '(m))
+(cl:defmethod actionId-val ((m <runGotoSimple-response>))
+  (roslisp-msg-protocol:msg-deprecation-warning "Using old-style slot reader rsi_lauv_ntnu-srv:actionId-val is deprecated.  Use rsi_lauv_ntnu-srv:actionId instead.")
+  (actionId m))
 (cl:defmethod roslisp-msg-protocol:serialize ((msg <runGotoSimple-response>) ostream)
   "Serializes a message object of type '<runGotoSimple-response>"
-  (cl:write-byte (cl:ldb (cl:byte 8 0) (cl:if (cl:slot-value msg 'success) 1 0)) ostream)
+  (cl:let* ((signed (cl:slot-value msg 'actionId)) (unsigned (cl:if (cl:< signed 0) (cl:+ signed 4294967296) signed)))
+    (cl:write-byte (cl:ldb (cl:byte 8 0) unsigned) ostream)
+    (cl:write-byte (cl:ldb (cl:byte 8 8) unsigned) ostream)
+    (cl:write-byte (cl:ldb (cl:byte 8 16) unsigned) ostream)
+    (cl:write-byte (cl:ldb (cl:byte 8 24) unsigned) ostream)
+    )
 )
 (cl:defmethod roslisp-msg-protocol:deserialize ((msg <runGotoSimple-response>) istream)
   "Deserializes a message object of type '<runGotoSimple-response>"
-    (cl:setf (cl:slot-value msg 'success) (cl:not (cl:zerop (cl:read-byte istream))))
+    (cl:let ((unsigned 0))
+      (cl:setf (cl:ldb (cl:byte 8 0) unsigned) (cl:read-byte istream))
+      (cl:setf (cl:ldb (cl:byte 8 8) unsigned) (cl:read-byte istream))
+      (cl:setf (cl:ldb (cl:byte 8 16) unsigned) (cl:read-byte istream))
+      (cl:setf (cl:ldb (cl:byte 8 24) unsigned) (cl:read-byte istream))
+      (cl:setf (cl:slot-value msg 'actionId) (cl:if (cl:< unsigned 2147483648) unsigned (cl:- unsigned 4294967296))))
   msg
 )
 (cl:defmethod roslisp-msg-protocol:ros-datatype ((msg (cl:eql '<runGotoSimple-response>)))
@@ -101,24 +111,24 @@
   "rsi_lauv_ntnu/runGotoSimpleResponse")
 (cl:defmethod roslisp-msg-protocol:md5sum ((type (cl:eql '<runGotoSimple-response>)))
   "Returns md5sum for a message object of type '<runGotoSimple-response>"
-  "f6223c7abdc4b623d217c01366131467")
+  "25b78143a6b69971297783f01406fddb")
 (cl:defmethod roslisp-msg-protocol:md5sum ((type (cl:eql 'runGotoSimple-response)))
   "Returns md5sum for a message object of type 'runGotoSimple-response"
-  "f6223c7abdc4b623d217c01366131467")
+  "25b78143a6b69971297783f01406fddb")
 (cl:defmethod roslisp-msg-protocol:message-definition ((type (cl:eql '<runGotoSimple-response>)))
   "Returns full string definition for message of type '<runGotoSimple-response>"
-  (cl:format cl:nil "bool success~%~%~%~%"))
+  (cl:format cl:nil "int32 actionId~%~%~%~%"))
 (cl:defmethod roslisp-msg-protocol:message-definition ((type (cl:eql 'runGotoSimple-response)))
   "Returns full string definition for message of type 'runGotoSimple-response"
-  (cl:format cl:nil "bool success~%~%~%~%"))
+  (cl:format cl:nil "int32 actionId~%~%~%~%"))
 (cl:defmethod roslisp-msg-protocol:serialization-length ((msg <runGotoSimple-response>))
   (cl:+ 0
-     1
+     4
 ))
 (cl:defmethod roslisp-msg-protocol:ros-message-to-list ((msg <runGotoSimple-response>))
   "Converts a ROS message object to a list"
   (cl:list 'runGotoSimple-response
-    (cl:cons ':success (success msg))
+    (cl:cons ':actionId (actionId msg))
 ))
 (cl:defmethod roslisp-msg-protocol:service-request-type ((msg (cl:eql 'runGotoSimple)))
   'runGotoSimple-request)
