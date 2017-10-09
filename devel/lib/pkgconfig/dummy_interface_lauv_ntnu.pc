@@ -1,0 +1,8 @@
+prefix=/home/uvlab/swarms/catkin_ws/devel
+
+Name: dummy_interface_lauv_ntnu
+Description: Description of dummy_interface_lauv_ntnu
+Version: 0.0.0
+Cflags: 
+Libs: -L/home/uvlab/swarms/catkin_ws/devel/lib 
+Requires: 

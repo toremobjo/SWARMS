@@ -6,4 +6,5 @@
 # testing this directory and lists subdirectories to be tested as well.
 SUBDIRS(gtest)
 SUBDIRS(rgi_rsi)
+SUBDIRS(dummy_interface_lauv_ntnu)
 SUBDIRS(rsi_lauv_ntnu)

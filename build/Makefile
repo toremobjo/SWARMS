@@ -1034,6 +1034,19 @@ std_msgs_generate_messages_py/fast:
 .PHONY : std_msgs_generate_messages_py/fast
 
 #=============================================================================
+# Target rules for targets named dummy_interface_lauv_ntnu_node
+
+# Build rule for target.
+dummy_interface_lauv_ntnu_node: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 dummy_interface_lauv_ntnu_node
+.PHONY : dummy_interface_lauv_ntnu_node
+
+# fast build rule for target.
+dummy_interface_lauv_ntnu_node/fast:
+	$(MAKE) -f dummy_interface_lauv_ntnu/CMakeFiles/dummy_interface_lauv_ntnu_node.dir/build.make dummy_interface_lauv_ntnu/CMakeFiles/dummy_interface_lauv_ntnu_node.dir/build
+.PHONY : dummy_interface_lauv_ntnu_node/fast
+
+#=============================================================================
 # Target rules for targets named _rsi_lauv_ntnu_generate_messages_check_deps_runGotoSimple
 
 # Build rule for target.
@@ -1296,6 +1309,7 @@ help:
 	@echo "... std_msgs_generate_messages_cpp"
 	@echo "... std_msgs_generate_messages_lisp"
 	@echo "... std_msgs_generate_messages_py"
+	@echo "... dummy_interface_lauv_ntnu_node"
 	@echo "... _rsi_lauv_ntnu_generate_messages_check_deps_runGotoSimple"
 	@echo "... _rsi_lauv_ntnu_generate_messages_check_deps_testMsgRsiLauv"
 	@echo "... _rsi_lauv_ntnu_generate_messages_check_deps_testSrvRsiLauv"

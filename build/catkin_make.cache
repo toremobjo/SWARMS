@@ -1,2 +1,2 @@
-rgi_rsi:rsi_lauv_ntnu
+dummy_interface_lauv_ntnu:rgi_rsi:rsi_lauv_ntnu
 -DCATKIN_DEVEL_PREFIX=/home/uvlab/swarms/catkin_ws/devel -DCMAKE_INSTALL_PREFIX=/home/uvlab/swarms/catkin_ws/install -G Unix Makefiles
