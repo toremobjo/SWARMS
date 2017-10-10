@@ -40,7 +40,7 @@ template<>
 struct MD5Sum< ::g2s_interface::actionStatus > {
   static const char* value()
   {
-    return "40e1ff988f8f97dafbffdb638a5673ae";
+    return "36abab75718bf03d8d144fcc0f28edb5";
   }
 
   static const char* value(const ::g2s_interface::actionStatus&) { return value(); }

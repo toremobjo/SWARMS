@@ -3,4 +3,6 @@
           ACTIONID
           ACTIONSTATUS-VAL
           ACTIONSTATUS
+          PROGRESS-VAL
+          PROGRESS
 ))

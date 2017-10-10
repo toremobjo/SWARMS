@@ -140,6 +140,9 @@ namespace drsilauv
     ros::ServiceServer ser24;
     ros::ServiceServer ser25;
     ros::ServiceServer ser26;
+    ros::ServiceServer ser27;
+    ros::ServiceServer ser28;
+    ros::ServiceServer ser29;
 
     //Service functions
     //Abort spesific  action, do nothing after.
@@ -193,5 +196,46 @@ namespace drsilauv
     bool runResume_Action(g2s_interface::resume_Action::Request &req,
       g2s_interface::resume_Action::Response &res);
 
+    bool runRunASCEND_GPS(g2s_interface::runASCEND_GPS::Request &req,
+      g2s_interface::runASCEND_GPS::Response &res);
+
+    bool runRunASCEND(g2s_interface::runASCEND::Request &req,
+      g2s_interface::runASCEND::Response &res);
+
+    bool runCIRCLE_USBL(g2s_interface::runCIRCLE_USBL::Request &req,
+      g2s_interface::runCIRCLE_USBL::Response &res);
+
+    bool runDIVE(g2s_interface::runDIVE::Request &req,
+      g2s_interface::runDIVE::Response &res);
+
+    bool runFOLLOW_ROW(g2s_interface::runFOLLOW_ROW::Request &req,
+      g2s_interface::runFOLLOW_ROW::Response &res);
+
+    bool runFOLLOW_STRUCTURE(g2s_interface::runFOLLOW_STRUCTURE::Request &req,
+      g2s_interface::runFOLLOW_STRUCTURE::Response &res);
+
+    bool runGOTO_WAYPOINT(g2s_interface::runGOTO_WAYPOINT::Request &req,
+      g2s_interface::runGOTO_WAYPOINT::Response &res);
+
+    bool runGRASP_OBJECT(g2s_interface::runGRASP_OBJECT::Request &req,
+      g2s_interface::runGRASP_OBJECT::Response &res);
+
+    bool runSONAR_SCANNING(g2s_interface::runSONAR_SCANNING::Request &req,
+      g2s_interface::runSONAR_SCANNING::Response &res);
+
+    bool runTRACK_TARGET(g2s_interface::runTRACK_TARGET::Request &req,
+      g2s_interface::runTRACK_TARGET::Response &res);
+
+    bool runVIDEO_ACQUISITION(g2s_interface::runVIDEO_ACQUISITION::Request &req,
+      g2s_interface::runVIDEO_ACQUISITION::Response &res);
+
+    bool runWAIT(g2s_interface::runWAIT::Request &req,
+      g2s_interface::runWAIT::Response &res);
+
+    bool stopEqptAction(g2s_interface::stopEqptAction::Request &req,
+      g2s_interface::stopEqptAction::Response &res);
+
+    bool suspend_Action(g2s_interface::suspend_Action::Request &req,
+      g2s_interface::suspend_Action::Response &res);
   };
 }

@@ -24,16 +24,21 @@ struct actionStatusResponse_
   typedef actionStatusResponse_<ContainerAllocator> Type;
 
   actionStatusResponse_()
-    : actionStatus()  {
+    : actionStatus()
+    , progress(0.0)  {
     }
   actionStatusResponse_(const ContainerAllocator& _alloc)
-    : actionStatus(_alloc)  {
+    : actionStatus(_alloc)
+    , progress(0.0)  {
     }
 
 
 
    typedef std::basic_string<char, std::char_traits<char>, typename ContainerAllocator::template rebind<char>::other >  _actionStatus_type;
   _actionStatus_type actionStatus;
+
+   typedef double _progress_type;
+  _progress_type progress;
 
 
 
@@ -112,12 +117,12 @@ struct MD5Sum< ::g2s_interface::actionStatusResponse_<ContainerAllocator> >
 {
   static const char* value()
   {
-    return "bb23af3b0c6b20da9cad59568b5701e3";
+    return "3287da97c7a588a45cf108195fac3499";
   }
 
   static const char* value(const ::g2s_interface::actionStatusResponse_<ContainerAllocator>&) { return value(); }
-  static const uint64_t static_value1 = 0xbb23af3b0c6b20daULL;
-  static const uint64_t static_value2 = 0x9cad59568b5701e3ULL;
+  static const uint64_t static_value1 = 0x3287da97c7a588a4ULL;
+  static const uint64_t static_value2 = 0x5cf108195fac3499ULL;
 };
 
 template<class ContainerAllocator>
@@ -137,6 +142,8 @@ struct Definition< ::g2s_interface::actionStatusResponse_<ContainerAllocator> >
   static const char* value()
   {
     return "string actionStatus\n\
+float64 progress\n\
+\n\
 ";
   }
 
@@ -156,6 +163,7 @@ namespace serialization
     template<typename Stream, typename T> inline static void allInOne(Stream& stream, T m)
     {
       stream.next(m.actionStatus);
+      stream.next(m.progress);
     }
 
     ROS_DECLARE_ALLINONE_SERIALIZER;
@@ -176,6 +184,8 @@ struct Printer< ::g2s_interface::actionStatusResponse_<ContainerAllocator> >
   {
     s << indent << "actionStatus: ";
     Printer<std::basic_string<char, std::char_traits<char>, typename ContainerAllocator::template rebind<char>::other > >::stream(s, indent + "  ", v.actionStatus);
+    s << indent << "progress: ";
+    Printer<double>::stream(s, indent + "  ", v.progress);
   }
 };
 

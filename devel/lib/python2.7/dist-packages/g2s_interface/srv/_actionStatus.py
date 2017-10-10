@@ -106,14 +106,16 @@ import struct
 
 
 class actionStatusResponse(genpy.Message):
-  _md5sum = "bb23af3b0c6b20da9cad59568b5701e3"
+  _md5sum = "3287da97c7a588a45cf108195fac3499"
   _type = "g2s_interface/actionStatusResponse"
   _has_header = False #flag to mark the presence of a Header object
   _full_text = """string actionStatus
+float64 progress
+
 
 """
-  __slots__ = ['actionStatus']
-  _slot_types = ['string']
+  __slots__ = ['actionStatus','progress']
+  _slot_types = ['string','float64']
 
   def __init__(self, *args, **kwds):
     """
@@ -123,7 +125,7 @@ class actionStatusResponse(genpy.Message):
     changes.  You cannot mix in-order arguments and keyword arguments.
 
     The available fields are:
-       actionStatus
+       actionStatus,progress
 
     :param args: complete set of field values, in .msg order
     :param kwds: use keyword arguments corresponding to message field names
@@ -134,8 +136,11 @@ class actionStatusResponse(genpy.Message):
       #message fields cannot be None, assign default values for those that are
       if self.actionStatus is None:
         self.actionStatus = ''
+      if self.progress is None:
+        self.progress = 0.
     else:
       self.actionStatus = ''
+      self.progress = 0.
 
   def _get_types(self):
     """
@@ -158,6 +163,7 @@ class actionStatusResponse(genpy.Message):
         buff.write(struct.pack('<I%sB'%length, length, *_x))
       else:
         buff.write(struct.pack('<I%ss'%length, length, _x))
+      buff.write(_struct_d.pack(self.progress))
     except struct.error as se: self._check_types(struct.error("%s: '%s' when writing '%s'" % (type(se), str(se), str(_x))))
     except TypeError as te: self._check_types(ValueError("%s: '%s' when writing '%s'" % (type(te), str(te), str(_x))))
 
@@ -177,6 +183,9 @@ class actionStatusResponse(genpy.Message):
         self.actionStatus = str[start:end].decode('utf-8')
       else:
         self.actionStatus = str[start:end]
+      start = end
+      end += 8
+      (self.progress,) = _struct_d.unpack(str[start:end])
       return self
     except struct.error as e:
       raise genpy.DeserializationError(e) #most likely buffer underfill
@@ -198,6 +207,7 @@ class actionStatusResponse(genpy.Message):
         buff.write(struct.pack('<I%sB'%length, length, *_x))
       else:
         buff.write(struct.pack('<I%ss'%length, length, _x))
+      buff.write(_struct_d.pack(self.progress))
     except struct.error as se: self._check_types(struct.error("%s: '%s' when writing '%s'" % (type(se), str(se), str(_x))))
     except TypeError as te: self._check_types(ValueError("%s: '%s' when writing '%s'" % (type(te), str(te), str(_x))))
 
@@ -218,13 +228,17 @@ class actionStatusResponse(genpy.Message):
         self.actionStatus = str[start:end].decode('utf-8')
       else:
         self.actionStatus = str[start:end]
+      start = end
+      end += 8
+      (self.progress,) = _struct_d.unpack(str[start:end])
       return self
     except struct.error as e:
       raise genpy.DeserializationError(e) #most likely buffer underfill
 
 _struct_I = genpy.struct_I
+_struct_d = struct.Struct("<d")
 class actionStatus(object):
   _type          = 'g2s_interface/actionStatus'
-  _md5sum = '40e1ff988f8f97dafbffdb638a5673ae'
+  _md5sum = '36abab75718bf03d8d144fcc0f28edb5'
   _request_class  = actionStatusRequest
   _response_class = actionStatusResponse

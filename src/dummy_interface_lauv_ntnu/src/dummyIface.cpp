@@ -42,7 +42,19 @@ namespace drsilauv{
        ser14 = nh_.advertiseService("resetEqpt", &dBridge::runResetEqpt, this);
        ser15 = nh_.advertiseService("resume_Action", &dBridge::runResume_Action, this);
        ser16 = nh_.advertiseService("runASCEND_GPS", &dBridge::runRunASCEND_GPS, this);
-
+       ser17 = nh_.advertiseService("runASCEND", &dBridge::runRunASCEND, this);
+       ser18 = nh_.advertiseService("runCIRCLE_USBL", &dBridge::runCIRCLE_USBL, this);
+       ser19 = nh_.advertiseService("runDIVE", &dBridge::runDIVE, this);
+       ser20 = nh_.advertiseService("runFOLLOW_ROW", &dBridge::runFOLLOW_ROW, this);
+       ser21 = nh_.advertiseService("runFOLLOW_STRUCTURE", &dBridge::runFOLLOW_STRUCTURE, this);
+       ser22 = nh_.advertiseService("runGOTO_WAYPOINT", &dBridge::runGOTO_WAYPOINT, this);
+       ser23 = nh_.advertiseService("runGRASP_OBJECT", &dBridge::runGRASP_OBJECT, this);
+       ser24 = nh_.advertiseService("runSONAR_SCANNING", &dBridge::runSONAR_SCANNING, this);
+       ser25 = nh_.advertiseService("runTRACK_TARGET", &dBridge::runTRACK_TARGET, this);
+       ser26 = nh_.advertiseService("runVIDEO_ACQUISITION", &dBridge::runVIDEO_ACQUISITION, this);
+       ser27 = nh_.advertiseService("runWAIT", &dBridge::runWAIT, this);
+       ser28 = nh_.advertiseService("stopEqptAction", &dBridge::stopEqptAction, this);
+       ser29 = nh_.advertiseService("suspend_Action", &dBridge::suspend_Action, this);
      };
 
      bool dBridge::runAbortAction(g2s_interface::abort_Action::Request &req,
@@ -150,7 +162,98 @@ namespace drsilauv{
       bool dBridge::runRunASCEND_GPS(g2s_interface::runASCEND_GPS::Request &req,
         g2s_interface::runASCEND_GPS::Response &res)
       {
-        res.eqptId = 9;
+        res.actionId = 9;
+        return true;
+      }
+
+      bool dBridge::runRunASCEND(g2s_interface::runASCEND::Request &req,
+        g2s_interface::runASCEND::Response &res)
+      {
+        res.actionId = 10;
+        return true;
+      }
+
+      bool dBridge::runCIRCLE_USBL(g2s_interface::runCIRCLE_USBL::Request &req,
+        g2s_interface::runCIRCLE_USBL::Response &res)
+      {
+        res.actionId = 11;
+        return true;
+      }
+
+      bool dBridge::runDIVE(g2s_interface::runDIVE::Request &req,
+        g2s_interface::runDIVE::Response &res)
+      {
+        res.actionId = 12;
+        return true;
+      }
+
+      bool dBridge::runFOLLOW_ROW(g2s_interface::runFOLLOW_ROW::Request &req,
+        g2s_interface::runFOLLOW_ROW::Response &res)
+      {
+        res.actionId = 13;
+        return true;
+      }
+
+      bool dBridge::runFOLLOW_STRUCTURE(g2s_interface::runFOLLOW_STRUCTURE::Request &req,
+        g2s_interface::runFOLLOW_STRUCTURE::Response &res)
+      {
+        res.actionId = 14;
+        return true;
+      }
+
+      bool dBridge::runGOTO_WAYPOINT(g2s_interface::runGOTO_WAYPOINT::Request &req,
+        g2s_interface::runGOTO_WAYPOINT::Response &res)
+      {
+        res.actionId = 15;
+        return true;
+      }
+
+      bool dBridge::runGRASP_OBJECT(g2s_interface::runGRASP_OBJECT::Request &req,
+        g2s_interface::runGRASP_OBJECT::Response &res)
+      {
+        res.actionId = 16;
+        return true;
+      }
+
+      bool dBridge::runSONAR_SCANNING(g2s_interface::runSONAR_SCANNING::Request &req,
+        g2s_interface::runSONAR_SCANNING::Response &res)
+      {
+        res.actionId = 17;
+        return true;
+      }
+
+      bool dBridge::runTRACK_TARGET(g2s_interface::runTRACK_TARGET::Request &req,
+        g2s_interface::runTRACK_TARGET::Response &res)
+      {
+        res.actionId = 18;
+        return true;
+      }
+
+      bool dBridge::runVIDEO_ACQUISITION(g2s_interface::runVIDEO_ACQUISITION::Request &req,
+        g2s_interface::runVIDEO_ACQUISITION::Response &res)
+      {
+        res.actionId = 19;
+        return true;
+      }
+
+      bool dBridge::runWAIT(g2s_interface::runWAIT::Request &req,
+        g2s_interface::runWAIT::Response &res)
+      {
+        res.actionId = 20;
+        return true;
+      }
+
+      bool dBridge::stopEqptAction(g2s_interface::stopEqptAction::Request &req,
+        g2s_interface::stopEqptAction::Response &res)
+      {
+        res.success = true;
+        return true;
+      }
+
+      bool dBridge::suspend_Action(g2s_interface::suspend_Action::Request &req,
+        g2s_interface::suspend_Action::Response &res)
+      {
+        res.success = true;
         return true;
       }
 
