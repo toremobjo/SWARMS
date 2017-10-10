@@ -1,6 +1,7 @@
 FILE(REMOVE_RECURSE
   "CMakeFiles/rsi_lauv_ntnu_generate_messages_py"
   "/home/uvlab/swarms/catkin_ws/devel/lib/python2.7/dist-packages/rsi_lauv_ntnu/msg/_testMsgRsiLauv.py"
+  "/home/uvlab/swarms/catkin_ws/devel/lib/python2.7/dist-packages/rsi_lauv_ntnu/msg/_robotPosSimple.py"
   "/home/uvlab/swarms/catkin_ws/devel/lib/python2.7/dist-packages/rsi_lauv_ntnu/srv/_runGotoSimple.py"
   "/home/uvlab/swarms/catkin_ws/devel/lib/python2.7/dist-packages/rsi_lauv_ntnu/srv/_testStationKeeping.py"
   "/home/uvlab/swarms/catkin_ws/devel/lib/python2.7/dist-packages/rsi_lauv_ntnu/srv/_testSrvRsiLauv.py"

@@ -1,6 +1,7 @@
 FILE(REMOVE_RECURSE
   "CMakeFiles/rsi_lauv_ntnu_generate_messages_cpp"
   "/home/uvlab/swarms/catkin_ws/devel/include/rsi_lauv_ntnu/testMsgRsiLauv.h"
+  "/home/uvlab/swarms/catkin_ws/devel/include/rsi_lauv_ntnu/robotPosSimple.h"
   "/home/uvlab/swarms/catkin_ws/devel/include/rsi_lauv_ntnu/runGotoSimple.h"
   "/home/uvlab/swarms/catkin_ws/devel/include/rsi_lauv_ntnu/testStationKeeping.h"
   "/home/uvlab/swarms/catkin_ws/devel/include/rsi_lauv_ntnu/testSrvRsiLauv.h"

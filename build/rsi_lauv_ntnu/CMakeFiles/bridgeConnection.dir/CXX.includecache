@@ -3130,6 +3130,26 @@ ros/builtin_message_traits.h
 ros/message_operations.h
 -
 
+/home/uvlab/swarms/catkin_ws/devel/include/rsi_lauv_ntnu/robotPosSimple.h
+string
+-
+vector
+-
+map
+-
+ros/types.h
+-
+ros/serialization.h
+-
+ros/builtin_message_traits.h
+-
+ros/message_operations.h
+-
+std_msgs/Header.h
+-
+geometry_msgs/Point.h
+-
+
 /home/uvlab/swarms/catkin_ws/devel/include/rsi_lauv_ntnu/runGotoSimple.h
 ros/service_traits.h
 -
@@ -3393,6 +3413,8 @@ rsi_lauv_ntnu/testStationKeeping.h
 /home/uvlab/swarms/catkin_ws/src/rsi_lauv_ntnu/include/rsi_lauv_ntnu/testStationKeeping.h
 rsi_lauv_ntnu/runGotoSimple.h
 /home/uvlab/swarms/catkin_ws/src/rsi_lauv_ntnu/include/rsi_lauv_ntnu/runGotoSimple.h
+rsi_lauv_ntnu/robotPosSimple.h
+/home/uvlab/swarms/catkin_ws/src/rsi_lauv_ntnu/include/rsi_lauv_ntnu/robotPosSimple.h
 g2s_interface/robotStatus.h
 /home/uvlab/swarms/catkin_ws/src/rsi_lauv_ntnu/include/g2s_interface/robotStatus.h
 g2s_interface/robotSituation.h

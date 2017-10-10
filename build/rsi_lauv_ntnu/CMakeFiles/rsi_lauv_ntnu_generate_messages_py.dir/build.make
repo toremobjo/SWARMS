@@ -46,6 +46,7 @@ CMAKE_BINARY_DIR = /home/uvlab/swarms/catkin_ws/build
 include rsi_lauv_ntnu/CMakeFiles/rsi_lauv_ntnu_generate_messages_py.dir/progress.make
 
 rsi_lauv_ntnu/CMakeFiles/rsi_lauv_ntnu_generate_messages_py: /home/uvlab/swarms/catkin_ws/devel/lib/python2.7/dist-packages/rsi_lauv_ntnu/msg/_testMsgRsiLauv.py
+rsi_lauv_ntnu/CMakeFiles/rsi_lauv_ntnu_generate_messages_py: /home/uvlab/swarms/catkin_ws/devel/lib/python2.7/dist-packages/rsi_lauv_ntnu/msg/_robotPosSimple.py
 rsi_lauv_ntnu/CMakeFiles/rsi_lauv_ntnu_generate_messages_py: /home/uvlab/swarms/catkin_ws/devel/lib/python2.7/dist-packages/rsi_lauv_ntnu/srv/_runGotoSimple.py
 rsi_lauv_ntnu/CMakeFiles/rsi_lauv_ntnu_generate_messages_py: /home/uvlab/swarms/catkin_ws/devel/lib/python2.7/dist-packages/rsi_lauv_ntnu/srv/_testStationKeeping.py
 rsi_lauv_ntnu/CMakeFiles/rsi_lauv_ntnu_generate_messages_py: /home/uvlab/swarms/catkin_ws/devel/lib/python2.7/dist-packages/rsi_lauv_ntnu/srv/_testSrvRsiLauv.py
@@ -59,45 +60,56 @@ rsi_lauv_ntnu/CMakeFiles/rsi_lauv_ntnu_generate_messages_py: /home/uvlab/swarms/
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold "Generating Python from MSG rsi_lauv_ntnu/testMsgRsiLauv"
 	cd /home/uvlab/swarms/catkin_ws/build/rsi_lauv_ntnu && ../catkin_generated/env_cached.sh /usr/bin/python /opt/ros/indigo/share/genpy/cmake/../../../lib/genpy/genmsg_py.py /home/uvlab/swarms/catkin_ws/src/rsi_lauv_ntnu/msg/testMsgRsiLauv.msg -Irsi_lauv_ntnu:/home/uvlab/swarms/catkin_ws/src/rsi_lauv_ntnu/msg -Istd_msgs:/opt/ros/indigo/share/std_msgs/cmake/../msg -Igeometry_msgs:/opt/ros/indigo/share/geometry_msgs/cmake/../msg -p rsi_lauv_ntnu -o /home/uvlab/swarms/catkin_ws/devel/lib/python2.7/dist-packages/rsi_lauv_ntnu/msg
 
+/home/uvlab/swarms/catkin_ws/devel/lib/python2.7/dist-packages/rsi_lauv_ntnu/msg/_robotPosSimple.py: /opt/ros/indigo/share/genpy/cmake/../../../lib/genpy/genmsg_py.py
+/home/uvlab/swarms/catkin_ws/devel/lib/python2.7/dist-packages/rsi_lauv_ntnu/msg/_robotPosSimple.py: /home/uvlab/swarms/catkin_ws/src/rsi_lauv_ntnu/msg/robotPosSimple.msg
+/home/uvlab/swarms/catkin_ws/devel/lib/python2.7/dist-packages/rsi_lauv_ntnu/msg/_robotPosSimple.py: /opt/ros/indigo/share/std_msgs/cmake/../msg/Header.msg
+/home/uvlab/swarms/catkin_ws/devel/lib/python2.7/dist-packages/rsi_lauv_ntnu/msg/_robotPosSimple.py: /opt/ros/indigo/share/geometry_msgs/cmake/../msg/Point.msg
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/uvlab/swarms/catkin_ws/build/CMakeFiles $(CMAKE_PROGRESS_2)
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold "Generating Python from MSG rsi_lauv_ntnu/robotPosSimple"
+	cd /home/uvlab/swarms/catkin_ws/build/rsi_lauv_ntnu && ../catkin_generated/env_cached.sh /usr/bin/python /opt/ros/indigo/share/genpy/cmake/../../../lib/genpy/genmsg_py.py /home/uvlab/swarms/catkin_ws/src/rsi_lauv_ntnu/msg/robotPosSimple.msg -Irsi_lauv_ntnu:/home/uvlab/swarms/catkin_ws/src/rsi_lauv_ntnu/msg -Istd_msgs:/opt/ros/indigo/share/std_msgs/cmake/../msg -Igeometry_msgs:/opt/ros/indigo/share/geometry_msgs/cmake/../msg -p rsi_lauv_ntnu -o /home/uvlab/swarms/catkin_ws/devel/lib/python2.7/dist-packages/rsi_lauv_ntnu/msg
+
 /home/uvlab/swarms/catkin_ws/devel/lib/python2.7/dist-packages/rsi_lauv_ntnu/srv/_runGotoSimple.py: /opt/ros/indigo/share/genpy/cmake/../../../lib/genpy/gensrv_py.py
 /home/uvlab/swarms/catkin_ws/devel/lib/python2.7/dist-packages/rsi_lauv_ntnu/srv/_runGotoSimple.py: /home/uvlab/swarms/catkin_ws/src/rsi_lauv_ntnu/srv/runGotoSimple.srv
 /home/uvlab/swarms/catkin_ws/devel/lib/python2.7/dist-packages/rsi_lauv_ntnu/srv/_runGotoSimple.py: /opt/ros/indigo/share/geometry_msgs/cmake/../msg/Point.msg
-	$(CMAKE_COMMAND) -E cmake_progress_report /home/uvlab/swarms/catkin_ws/build/CMakeFiles $(CMAKE_PROGRESS_2)
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/uvlab/swarms/catkin_ws/build/CMakeFiles $(CMAKE_PROGRESS_3)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold "Generating Python code from SRV rsi_lauv_ntnu/runGotoSimple"
 	cd /home/uvlab/swarms/catkin_ws/build/rsi_lauv_ntnu && ../catkin_generated/env_cached.sh /usr/bin/python /opt/ros/indigo/share/genpy/cmake/../../../lib/genpy/gensrv_py.py /home/uvlab/swarms/catkin_ws/src/rsi_lauv_ntnu/srv/runGotoSimple.srv -Irsi_lauv_ntnu:/home/uvlab/swarms/catkin_ws/src/rsi_lauv_ntnu/msg -Istd_msgs:/opt/ros/indigo/share/std_msgs/cmake/../msg -Igeometry_msgs:/opt/ros/indigo/share/geometry_msgs/cmake/../msg -p rsi_lauv_ntnu -o /home/uvlab/swarms/catkin_ws/devel/lib/python2.7/dist-packages/rsi_lauv_ntnu/srv
 
 /home/uvlab/swarms/catkin_ws/devel/lib/python2.7/dist-packages/rsi_lauv_ntnu/srv/_testStationKeeping.py: /opt/ros/indigo/share/genpy/cmake/../../../lib/genpy/gensrv_py.py
 /home/uvlab/swarms/catkin_ws/devel/lib/python2.7/dist-packages/rsi_lauv_ntnu/srv/_testStationKeeping.py: /home/uvlab/swarms/catkin_ws/src/rsi_lauv_ntnu/srv/testStationKeeping.srv
-	$(CMAKE_COMMAND) -E cmake_progress_report /home/uvlab/swarms/catkin_ws/build/CMakeFiles $(CMAKE_PROGRESS_3)
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/uvlab/swarms/catkin_ws/build/CMakeFiles $(CMAKE_PROGRESS_4)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold "Generating Python code from SRV rsi_lauv_ntnu/testStationKeeping"
 	cd /home/uvlab/swarms/catkin_ws/build/rsi_lauv_ntnu && ../catkin_generated/env_cached.sh /usr/bin/python /opt/ros/indigo/share/genpy/cmake/../../../lib/genpy/gensrv_py.py /home/uvlab/swarms/catkin_ws/src/rsi_lauv_ntnu/srv/testStationKeeping.srv -Irsi_lauv_ntnu:/home/uvlab/swarms/catkin_ws/src/rsi_lauv_ntnu/msg -Istd_msgs:/opt/ros/indigo/share/std_msgs/cmake/../msg -Igeometry_msgs:/opt/ros/indigo/share/geometry_msgs/cmake/../msg -p rsi_lauv_ntnu -o /home/uvlab/swarms/catkin_ws/devel/lib/python2.7/dist-packages/rsi_lauv_ntnu/srv
 
 /home/uvlab/swarms/catkin_ws/devel/lib/python2.7/dist-packages/rsi_lauv_ntnu/srv/_testSrvRsiLauv.py: /opt/ros/indigo/share/genpy/cmake/../../../lib/genpy/gensrv_py.py
 /home/uvlab/swarms/catkin_ws/devel/lib/python2.7/dist-packages/rsi_lauv_ntnu/srv/_testSrvRsiLauv.py: /home/uvlab/swarms/catkin_ws/src/rsi_lauv_ntnu/srv/testSrvRsiLauv.srv
-	$(CMAKE_COMMAND) -E cmake_progress_report /home/uvlab/swarms/catkin_ws/build/CMakeFiles $(CMAKE_PROGRESS_4)
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/uvlab/swarms/catkin_ws/build/CMakeFiles $(CMAKE_PROGRESS_5)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold "Generating Python code from SRV rsi_lauv_ntnu/testSrvRsiLauv"
 	cd /home/uvlab/swarms/catkin_ws/build/rsi_lauv_ntnu && ../catkin_generated/env_cached.sh /usr/bin/python /opt/ros/indigo/share/genpy/cmake/../../../lib/genpy/gensrv_py.py /home/uvlab/swarms/catkin_ws/src/rsi_lauv_ntnu/srv/testSrvRsiLauv.srv -Irsi_lauv_ntnu:/home/uvlab/swarms/catkin_ws/src/rsi_lauv_ntnu/msg -Istd_msgs:/opt/ros/indigo/share/std_msgs/cmake/../msg -Igeometry_msgs:/opt/ros/indigo/share/geometry_msgs/cmake/../msg -p rsi_lauv_ntnu -o /home/uvlab/swarms/catkin_ws/devel/lib/python2.7/dist-packages/rsi_lauv_ntnu/srv
 
 /home/uvlab/swarms/catkin_ws/devel/lib/python2.7/dist-packages/rsi_lauv_ntnu/msg/__init__.py: /opt/ros/indigo/share/genpy/cmake/../../../lib/genpy/genmsg_py.py
 /home/uvlab/swarms/catkin_ws/devel/lib/python2.7/dist-packages/rsi_lauv_ntnu/msg/__init__.py: /home/uvlab/swarms/catkin_ws/devel/lib/python2.7/dist-packages/rsi_lauv_ntnu/msg/_testMsgRsiLauv.py
+/home/uvlab/swarms/catkin_ws/devel/lib/python2.7/dist-packages/rsi_lauv_ntnu/msg/__init__.py: /home/uvlab/swarms/catkin_ws/devel/lib/python2.7/dist-packages/rsi_lauv_ntnu/msg/_robotPosSimple.py
 /home/uvlab/swarms/catkin_ws/devel/lib/python2.7/dist-packages/rsi_lauv_ntnu/msg/__init__.py: /home/uvlab/swarms/catkin_ws/devel/lib/python2.7/dist-packages/rsi_lauv_ntnu/srv/_runGotoSimple.py
 /home/uvlab/swarms/catkin_ws/devel/lib/python2.7/dist-packages/rsi_lauv_ntnu/msg/__init__.py: /home/uvlab/swarms/catkin_ws/devel/lib/python2.7/dist-packages/rsi_lauv_ntnu/srv/_testStationKeeping.py
 /home/uvlab/swarms/catkin_ws/devel/lib/python2.7/dist-packages/rsi_lauv_ntnu/msg/__init__.py: /home/uvlab/swarms/catkin_ws/devel/lib/python2.7/dist-packages/rsi_lauv_ntnu/srv/_testSrvRsiLauv.py
-	$(CMAKE_COMMAND) -E cmake_progress_report /home/uvlab/swarms/catkin_ws/build/CMakeFiles $(CMAKE_PROGRESS_5)
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/uvlab/swarms/catkin_ws/build/CMakeFiles $(CMAKE_PROGRESS_6)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold "Generating Python msg __init__.py for rsi_lauv_ntnu"
 	cd /home/uvlab/swarms/catkin_ws/build/rsi_lauv_ntnu && ../catkin_generated/env_cached.sh /usr/bin/python /opt/ros/indigo/share/genpy/cmake/../../../lib/genpy/genmsg_py.py -o /home/uvlab/swarms/catkin_ws/devel/lib/python2.7/dist-packages/rsi_lauv_ntnu/msg --initpy
 
 /home/uvlab/swarms/catkin_ws/devel/lib/python2.7/dist-packages/rsi_lauv_ntnu/srv/__init__.py: /opt/ros/indigo/share/genpy/cmake/../../../lib/genpy/genmsg_py.py
 /home/uvlab/swarms/catkin_ws/devel/lib/python2.7/dist-packages/rsi_lauv_ntnu/srv/__init__.py: /home/uvlab/swarms/catkin_ws/devel/lib/python2.7/dist-packages/rsi_lauv_ntnu/msg/_testMsgRsiLauv.py
+/home/uvlab/swarms/catkin_ws/devel/lib/python2.7/dist-packages/rsi_lauv_ntnu/srv/__init__.py: /home/uvlab/swarms/catkin_ws/devel/lib/python2.7/dist-packages/rsi_lauv_ntnu/msg/_robotPosSimple.py
 /home/uvlab/swarms/catkin_ws/devel/lib/python2.7/dist-packages/rsi_lauv_ntnu/srv/__init__.py: /home/uvlab/swarms/catkin_ws/devel/lib/python2.7/dist-packages/rsi_lauv_ntnu/srv/_runGotoSimple.py
 /home/uvlab/swarms/catkin_ws/devel/lib/python2.7/dist-packages/rsi_lauv_ntnu/srv/__init__.py: /home/uvlab/swarms/catkin_ws/devel/lib/python2.7/dist-packages/rsi_lauv_ntnu/srv/_testStationKeeping.py
 /home/uvlab/swarms/catkin_ws/devel/lib/python2.7/dist-packages/rsi_lauv_ntnu/srv/__init__.py: /home/uvlab/swarms/catkin_ws/devel/lib/python2.7/dist-packages/rsi_lauv_ntnu/srv/_testSrvRsiLauv.py
-	$(CMAKE_COMMAND) -E cmake_progress_report /home/uvlab/swarms/catkin_ws/build/CMakeFiles $(CMAKE_PROGRESS_6)
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/uvlab/swarms/catkin_ws/build/CMakeFiles $(CMAKE_PROGRESS_7)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold "Generating Python srv __init__.py for rsi_lauv_ntnu"
 	cd /home/uvlab/swarms/catkin_ws/build/rsi_lauv_ntnu && ../catkin_generated/env_cached.sh /usr/bin/python /opt/ros/indigo/share/genpy/cmake/../../../lib/genpy/genmsg_py.py -o /home/uvlab/swarms/catkin_ws/devel/lib/python2.7/dist-packages/rsi_lauv_ntnu/srv --initpy
 
 rsi_lauv_ntnu_generate_messages_py: rsi_lauv_ntnu/CMakeFiles/rsi_lauv_ntnu_generate_messages_py
 rsi_lauv_ntnu_generate_messages_py: /home/uvlab/swarms/catkin_ws/devel/lib/python2.7/dist-packages/rsi_lauv_ntnu/msg/_testMsgRsiLauv.py
+rsi_lauv_ntnu_generate_messages_py: /home/uvlab/swarms/catkin_ws/devel/lib/python2.7/dist-packages/rsi_lauv_ntnu/msg/_robotPosSimple.py
 rsi_lauv_ntnu_generate_messages_py: /home/uvlab/swarms/catkin_ws/devel/lib/python2.7/dist-packages/rsi_lauv_ntnu/srv/_runGotoSimple.py
 rsi_lauv_ntnu_generate_messages_py: /home/uvlab/swarms/catkin_ws/devel/lib/python2.7/dist-packages/rsi_lauv_ntnu/srv/_testStationKeeping.py
 rsi_lauv_ntnu_generate_messages_py: /home/uvlab/swarms/catkin_ws/devel/lib/python2.7/dist-packages/rsi_lauv_ntnu/srv/_testSrvRsiLauv.py

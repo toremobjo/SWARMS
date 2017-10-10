@@ -3,5 +3,7 @@
   (:export
    "<TESTMSGRSILAUV>"
    "TESTMSGRSILAUV"
+   "<ROBOTPOSSIMPLE>"
+   "ROBOTPOSSIMPLE"
   ))
 

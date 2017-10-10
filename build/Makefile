@@ -1047,6 +1047,19 @@ dummy_interface_lauv_ntnu_node/fast:
 .PHONY : dummy_interface_lauv_ntnu_node/fast
 
 #=============================================================================
+# Target rules for targets named _rsi_lauv_ntnu_generate_messages_check_deps_robotPosSimple
+
+# Build rule for target.
+_rsi_lauv_ntnu_generate_messages_check_deps_robotPosSimple: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 _rsi_lauv_ntnu_generate_messages_check_deps_robotPosSimple
+.PHONY : _rsi_lauv_ntnu_generate_messages_check_deps_robotPosSimple
+
+# fast build rule for target.
+_rsi_lauv_ntnu_generate_messages_check_deps_robotPosSimple/fast:
+	$(MAKE) -f rsi_lauv_ntnu/CMakeFiles/_rsi_lauv_ntnu_generate_messages_check_deps_robotPosSimple.dir/build.make rsi_lauv_ntnu/CMakeFiles/_rsi_lauv_ntnu_generate_messages_check_deps_robotPosSimple.dir/build
+.PHONY : _rsi_lauv_ntnu_generate_messages_check_deps_robotPosSimple/fast
+
+#=============================================================================
 # Target rules for targets named _rsi_lauv_ntnu_generate_messages_check_deps_runGotoSimple
 
 # Build rule for target.
@@ -1310,6 +1323,7 @@ help:
 	@echo "... std_msgs_generate_messages_lisp"
 	@echo "... std_msgs_generate_messages_py"
 	@echo "... dummy_interface_lauv_ntnu_node"
+	@echo "... _rsi_lauv_ntnu_generate_messages_check_deps_robotPosSimple"
 	@echo "... _rsi_lauv_ntnu_generate_messages_check_deps_runGotoSimple"
 	@echo "... _rsi_lauv_ntnu_generate_messages_check_deps_testMsgRsiLauv"
 	@echo "... _rsi_lauv_ntnu_generate_messages_check_deps_testSrvRsiLauv"

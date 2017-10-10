@@ -1,6 +1,6 @@
 # generated from genmsg/cmake/pkg-genmsg.cmake.em
 
-message(STATUS "rsi_lauv_ntnu: 1 messages, 3 services")
+message(STATUS "rsi_lauv_ntnu: 2 messages, 3 services")
 
 set(MSG_I_FLAGS "-Irsi_lauv_ntnu:/home/uvlab/swarms/catkin_ws/src/rsi_lauv_ntnu/msg;-Istd_msgs:/opt/ros/indigo/share/std_msgs/cmake/../msg;-Igeometry_msgs:/opt/ros/indigo/share/geometry_msgs/cmake/../msg")
 
@@ -35,6 +35,11 @@ add_custom_target(_rsi_lauv_ntnu_generate_messages_check_deps_${_filename}
   COMMAND ${CATKIN_ENV} ${PYTHON_EXECUTABLE} ${GENMSG_CHECK_DEPS_SCRIPT} "rsi_lauv_ntnu" "/home/uvlab/swarms/catkin_ws/src/rsi_lauv_ntnu/srv/runGotoSimple.srv" "geometry_msgs/Point"
 )
 
+get_filename_component(_filename "/home/uvlab/swarms/catkin_ws/src/rsi_lauv_ntnu/msg/robotPosSimple.msg" NAME_WE)
+add_custom_target(_rsi_lauv_ntnu_generate_messages_check_deps_${_filename}
+  COMMAND ${CATKIN_ENV} ${PYTHON_EXECUTABLE} ${GENMSG_CHECK_DEPS_SCRIPT} "rsi_lauv_ntnu" "/home/uvlab/swarms/catkin_ws/src/rsi_lauv_ntnu/msg/robotPosSimple.msg" "std_msgs/Header:geometry_msgs/Point"
+)
+
 #
 #  langs = gencpp;genlisp;genpy
 #
@@ -45,6 +50,12 @@ _generate_msg_cpp(rsi_lauv_ntnu
   "/home/uvlab/swarms/catkin_ws/src/rsi_lauv_ntnu/msg/testMsgRsiLauv.msg"
   "${MSG_I_FLAGS}"
   "/opt/ros/indigo/share/std_msgs/cmake/../msg/Header.msg"
+  ${CATKIN_DEVEL_PREFIX}/${gencpp_INSTALL_DIR}/rsi_lauv_ntnu
+)
+_generate_msg_cpp(rsi_lauv_ntnu
+  "/home/uvlab/swarms/catkin_ws/src/rsi_lauv_ntnu/msg/robotPosSimple.msg"
+  "${MSG_I_FLAGS}"
+  "/opt/ros/indigo/share/std_msgs/cmake/../msg/Header.msg;/opt/ros/indigo/share/geometry_msgs/cmake/../msg/Point.msg"
   ${CATKIN_DEVEL_PREFIX}/${gencpp_INSTALL_DIR}/rsi_lauv_ntnu
 )
 
@@ -88,6 +99,8 @@ get_filename_component(_filename "/home/uvlab/swarms/catkin_ws/src/rsi_lauv_ntnu
 add_dependencies(rsi_lauv_ntnu_generate_messages_cpp _rsi_lauv_ntnu_generate_messages_check_deps_${_filename})
 get_filename_component(_filename "/home/uvlab/swarms/catkin_ws/src/rsi_lauv_ntnu/srv/runGotoSimple.srv" NAME_WE)
 add_dependencies(rsi_lauv_ntnu_generate_messages_cpp _rsi_lauv_ntnu_generate_messages_check_deps_${_filename})
+get_filename_component(_filename "/home/uvlab/swarms/catkin_ws/src/rsi_lauv_ntnu/msg/robotPosSimple.msg" NAME_WE)
+add_dependencies(rsi_lauv_ntnu_generate_messages_cpp _rsi_lauv_ntnu_generate_messages_check_deps_${_filename})
 
 # target for backward compatibility
 add_custom_target(rsi_lauv_ntnu_gencpp)
@@ -102,6 +115,12 @@ _generate_msg_lisp(rsi_lauv_ntnu
   "/home/uvlab/swarms/catkin_ws/src/rsi_lauv_ntnu/msg/testMsgRsiLauv.msg"
   "${MSG_I_FLAGS}"
   "/opt/ros/indigo/share/std_msgs/cmake/../msg/Header.msg"
+  ${CATKIN_DEVEL_PREFIX}/${genlisp_INSTALL_DIR}/rsi_lauv_ntnu
+)
+_generate_msg_lisp(rsi_lauv_ntnu
+  "/home/uvlab/swarms/catkin_ws/src/rsi_lauv_ntnu/msg/robotPosSimple.msg"
+  "${MSG_I_FLAGS}"
+  "/opt/ros/indigo/share/std_msgs/cmake/../msg/Header.msg;/opt/ros/indigo/share/geometry_msgs/cmake/../msg/Point.msg"
   ${CATKIN_DEVEL_PREFIX}/${genlisp_INSTALL_DIR}/rsi_lauv_ntnu
 )
 
@@ -145,6 +164,8 @@ get_filename_component(_filename "/home/uvlab/swarms/catkin_ws/src/rsi_lauv_ntnu
 add_dependencies(rsi_lauv_ntnu_generate_messages_lisp _rsi_lauv_ntnu_generate_messages_check_deps_${_filename})
 get_filename_component(_filename "/home/uvlab/swarms/catkin_ws/src/rsi_lauv_ntnu/srv/runGotoSimple.srv" NAME_WE)
 add_dependencies(rsi_lauv_ntnu_generate_messages_lisp _rsi_lauv_ntnu_generate_messages_check_deps_${_filename})
+get_filename_component(_filename "/home/uvlab/swarms/catkin_ws/src/rsi_lauv_ntnu/msg/robotPosSimple.msg" NAME_WE)
+add_dependencies(rsi_lauv_ntnu_generate_messages_lisp _rsi_lauv_ntnu_generate_messages_check_deps_${_filename})
 
 # target for backward compatibility
 add_custom_target(rsi_lauv_ntnu_genlisp)
@@ -159,6 +180,12 @@ _generate_msg_py(rsi_lauv_ntnu
   "/home/uvlab/swarms/catkin_ws/src/rsi_lauv_ntnu/msg/testMsgRsiLauv.msg"
   "${MSG_I_FLAGS}"
   "/opt/ros/indigo/share/std_msgs/cmake/../msg/Header.msg"
+  ${CATKIN_DEVEL_PREFIX}/${genpy_INSTALL_DIR}/rsi_lauv_ntnu
+)
+_generate_msg_py(rsi_lauv_ntnu
+  "/home/uvlab/swarms/catkin_ws/src/rsi_lauv_ntnu/msg/robotPosSimple.msg"
+  "${MSG_I_FLAGS}"
+  "/opt/ros/indigo/share/std_msgs/cmake/../msg/Header.msg;/opt/ros/indigo/share/geometry_msgs/cmake/../msg/Point.msg"
   ${CATKIN_DEVEL_PREFIX}/${genpy_INSTALL_DIR}/rsi_lauv_ntnu
 )
 
@@ -201,6 +228,8 @@ add_dependencies(rsi_lauv_ntnu_generate_messages_py _rsi_lauv_ntnu_generate_mess
 get_filename_component(_filename "/home/uvlab/swarms/catkin_ws/src/rsi_lauv_ntnu/srv/testStationKeeping.srv" NAME_WE)
 add_dependencies(rsi_lauv_ntnu_generate_messages_py _rsi_lauv_ntnu_generate_messages_check_deps_${_filename})
 get_filename_component(_filename "/home/uvlab/swarms/catkin_ws/src/rsi_lauv_ntnu/srv/runGotoSimple.srv" NAME_WE)
+add_dependencies(rsi_lauv_ntnu_generate_messages_py _rsi_lauv_ntnu_generate_messages_check_deps_${_filename})
+get_filename_component(_filename "/home/uvlab/swarms/catkin_ws/src/rsi_lauv_ntnu/msg/robotPosSimple.msg" NAME_WE)
 add_dependencies(rsi_lauv_ntnu_generate_messages_py _rsi_lauv_ntnu_generate_messages_check_deps_${_filename})
 
 # target for backward compatibility
