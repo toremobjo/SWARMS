@@ -2,5 +2,5 @@
 
 test
 ```bash
-sudo test
+$ sudo test
 ```
