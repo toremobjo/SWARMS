@@ -29,7 +29,7 @@ roscore
 ```
 Source devel/setup.bash and run the rosnode.
 
-bash
+```bash
 source devel/setup.bash
 rosrun dummy_lauv_ntnu dummy_interface_lauv_ntnu_node
 ```
