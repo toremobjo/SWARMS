@@ -156,5 +156,6 @@ dummy_interface_lauv_ntnu/CMakeFiles/dummy_interface_lauv_ntnu_node.dir/src/dumm
  /opt/ros/indigo/include/ros/wall_timer.h
  /opt/ros/indigo/include/ros/wall_timer_options.h
  /opt/ros/indigo/include/rosconsole/macros_generated.h
+ /opt/ros/indigo/include/std_msgs/Float32.h
  /opt/ros/indigo/include/std_msgs/Header.h
  /opt/ros/indigo/include/std_msgs/String.h

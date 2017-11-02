@@ -4,7 +4,9 @@
 // ROS headers
 #include <ros/ros.h>
 
+
 #include <std_msgs/String.h>
+#include <std_msgs/Float32.h>
 #include <std_msgs/Header.h>
 #include <geometry_msgs/Pose.h>
 #include <geometry_msgs/Point.h>
@@ -51,6 +53,7 @@
 // Boost headers.
 #include <boost/thread/thread.hpp>
 #include <boost/shared_ptr.hpp>
+#include <boost/lexical_cast.hpp>
 
 namespace drsilauv
 {
@@ -74,6 +77,7 @@ namespace drsilauv
     float phi, theta, psi; // Euler angles for roll, pitch and yaw.
     float u, v, w; // Velocities in the body-fixed coordinate frame.
     float vx, vy, vz; // Velocities in the earth-fixed coordinate frame.
+    float vnorm;
     float p, q, r; //Angular velocity in roll, pitch and yaw (body-fixed).
     float depth; //Depth below surface.
     float altitude;
@@ -88,8 +92,8 @@ namespace drsilauv
   {
     ros::Time requestTime;
     int actionNumber;
-    //DUNE::IMC::PlanControl actionPlan;
     bool success;
+    bool running;
   };
   class dBridge
   {
@@ -100,7 +104,34 @@ namespace drsilauv
 
     // Messages ot for dummy interface
     void messageOut(const ros::TimerEvent& event){;};
+    void actionUpdate();
     void stop(void);
+
+    //Action tracking
+    bool runningAction;
+    int runningActionId;
+    ros::Time actionStart;
+    float actionDuration;
+
+    bool suspendedAction;
+    float suspendedActionDuration;
+    int suspendedActionId;
+
+    bool acousticOn;  //id : 1
+    bool cameraOn;    //id : 2
+    bool gpsOn;       //id : 3
+    bool laserOn;     //id : 4
+    bool lightOn;     //id : 5
+    bool sonarOn;     //id : 6
+    bool usblOn;      //id : 7
+    bool wifiOn;      //id : 8
+
+    bool alarms;
+
+    Situation situ;
+    Water water;
+    Fuel fuel;
+
   private:
     ros::NodeHandle nh_;
     std::string& nodeName_;
@@ -237,5 +268,8 @@ namespace drsilauv
 
     bool suspend_Action(g2s_interface::suspend_Action::Request &req,
       g2s_interface::suspend_Action::Response &res);
+
+    bool actionTrack(int actionId);
+
   };
 }

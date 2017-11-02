@@ -1034,6 +1034,19 @@ std_msgs_generate_messages_py/fast:
 .PHONY : std_msgs_generate_messages_py/fast
 
 #=============================================================================
+# Target rules for targets named _catkin_empty_exported_target
+
+# Build rule for target.
+_catkin_empty_exported_target: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 _catkin_empty_exported_target
+.PHONY : _catkin_empty_exported_target
+
+# fast build rule for target.
+_catkin_empty_exported_target/fast:
+	$(MAKE) -f dummy_interface_lauv_ntnu/CMakeFiles/_catkin_empty_exported_target.dir/build.make dummy_interface_lauv_ntnu/CMakeFiles/_catkin_empty_exported_target.dir/build
+.PHONY : _catkin_empty_exported_target/fast
+
+#=============================================================================
 # Target rules for targets named dummy_interface_lauv_ntnu_node
 
 # Build rule for target.
@@ -1322,6 +1335,7 @@ help:
 	@echo "... std_msgs_generate_messages_cpp"
 	@echo "... std_msgs_generate_messages_lisp"
 	@echo "... std_msgs_generate_messages_py"
+	@echo "... _catkin_empty_exported_target"
 	@echo "... dummy_interface_lauv_ntnu_node"
 	@echo "... _rsi_lauv_ntnu_generate_messages_check_deps_robotPosSimple"
 	@echo "... _rsi_lauv_ntnu_generate_messages_check_deps_runGotoSimple"
